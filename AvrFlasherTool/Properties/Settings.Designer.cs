@@ -70,5 +70,86 @@ namespace AvrFlasherTool.Properties {
                 this["saveSelected"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string lowByteFuse {
+            get {
+                return ((string)(this["lowByteFuse"]));
+            }
+            set {
+                this["lowByteFuse"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string highByteFuse {
+            get {
+                return ((string)(this["highByteFuse"]));
+            }
+            set {
+                this["highByteFuse"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string exByteFuse {
+            get {
+                return ((string)(this["exByteFuse"]));
+            }
+            set {
+                this["exByteFuse"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.0.1.3")]
+        public string Version {
+            get {
+                return ((string)(this["Version"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string freqFuseSettings {
+            get {
+                return ((string)(this["freqFuseSettings"]));
+            }
+            set {
+                this["freqFuseSettings"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string bodFuseSettings {
+            get {
+                return ((string)(this["bodFuseSettings"]));
+            }
+            set {
+                this["bodFuseSettings"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string bootloaderFuseSettings {
+            get {
+                return ((string)(this["bootloaderFuseSettings"]));
+            }
+            set {
+                this["bootloaderFuseSettings"] = value;
+            }
+        }
     }
 }

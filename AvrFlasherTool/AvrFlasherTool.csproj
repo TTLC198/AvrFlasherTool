@@ -12,6 +12,27 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://sites.google.com/view/appslightcompanyofficial</SupportUrl>
+    <ErrorReportUrl>https://sites.google.com/view/appslightcompanyofficial</ErrorReportUrl>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Avr Flasher Tool</ProductName>
+    <PublisherName>AppsLightCompany</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +52,15 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -55,7 +85,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.en.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.ru-RU.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.ru.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -82,25 +121,82 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Programmer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fuse.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\EEPROMRead.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FileIco.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Fuse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\githubIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MCU Auto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MCU Flash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MCU info1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MCU settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progIco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Programmer.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Read.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Search.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\EEPROMRead.png" />
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vkIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yotubeico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\googlePlayIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

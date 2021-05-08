@@ -65,34 +65,61 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.FUSES = new System.Windows.Forms.TabPage();
             this.manualSettingsGroup = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.ExByteText = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.HighByteText = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.LowByteText = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.manualSettingsCheck = new System.Windows.Forms.CheckBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.readFuseSettings = new System.Windows.Forms.Button();
+            this.ConsoleFuseTextBox = new System.Windows.Forms.RichTextBox();
+            this.flashFuseButton = new System.Windows.Forms.Button();
+            this.autoSettingsGroup = new System.Windows.Forms.GroupBox();
+            this.eesaveCheck = new System.Windows.Forms.CheckBox();
+            this.spiCheck = new System.Windows.Forms.CheckBox();
+            this.wdCheck = new System.Windows.Forms.CheckBox();
+            this.autoSettingsCheck = new System.Windows.Forms.CheckBox();
+            this.eesaveEnableLabel = new System.Windows.Forms.Label();
+            this.spiEnableLabel = new System.Windows.Forms.Label();
+            this.watchdogTimerLabel = new System.Windows.Forms.Label();
+            this.resetIOCheck = new System.Windows.Forms.CheckBox();
+            this.bootCheck = new System.Windows.Forms.CheckBox();
+            this.bodenCheck = new System.Windows.Forms.CheckBox();
+            this.bootSizeBox = new System.Windows.Forms.ComboBox();
+            this.bootSizeLabel = new System.Windows.Forms.Label();
+            this.bodLvlLabel = new System.Windows.Forms.Label();
+            this.freqLabel = new System.Windows.Forms.Label();
+            this.bodLevelBox = new System.Windows.Forms.ComboBox();
+            this.freqComboBox = new System.Windows.Forms.ComboBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.SETTINGS = new System.Windows.Forms.TabPage();
+            this.invertFusesCheck = new System.Windows.Forms.CheckBox();
+            this.invertFusesLabel = new System.Windows.Forms.Label();
+            this.debugModeCheck = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.INFO = new System.Windows.Forms.TabPage();
+            this.googlePlayIco = new System.Windows.Forms.PictureBox();
+            this.yotubeIco = new System.Windows.Forms.PictureBox();
+            this.vkIco = new System.Windows.Forms.PictureBox();
+            this.githubIco = new System.Windows.Forms.PictureBox();
+            this.instIco = new System.Windows.Forms.PictureBox();
+            this.infoTextBox = new System.Windows.Forms.RichTextBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.AppsLightCompanyIco = new System.Windows.Forms.PictureBox();
             this.icons = new System.Windows.Forms.ImageList(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolTipButtons = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.deployAvrdude = new System.ComponentModel.BackgroundWorker();
-            this.mcuSettingsIcon = new System.Windows.Forms.PictureBox();
-            this.consoleFuseGroup = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.fuseFlashButton = new System.Windows.Forms.Button();
-            this.manualSettingsCheck = new System.Windows.Forms.CheckBox();
-            this.autoSettingsGroup = new System.Windows.Forms.GroupBox();
-            this.autoSettingsCheck = new System.Windows.Forms.CheckBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.fuseReadButton = new System.Windows.Forms.Button();
-            this.lowByteFuseLabel = new System.Windows.Forms.Label();
-            this.lowByteText = new System.Windows.Forms.TextBox();
-            this.lowByteLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.highByteText = new System.Windows.Forms.TextBox();
-            this.highLabelFuseLabel = new System.Windows.Forms.Label();
-            this.highByteLabel = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.extByteText = new System.Windows.Forms.TextBox();
-            this.extByteFuseLabel = new System.Windows.Forms.Label();
-            this.extByteLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.MCU.SuspendLayout();
             this.filesSelectGroup.SuspendLayout();
@@ -104,13 +131,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.FUSES.SuspendLayout();
             this.manualSettingsGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mcuSettingsIcon)).BeginInit();
-            this.consoleFuseGroup.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.autoSettingsGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.SETTINGS.SuspendLayout();
+            this.INFO.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.googlePlayIco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yotubeIco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vkIco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.githubIco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.instIco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AppsLightCompanyIco)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -122,13 +158,13 @@
             this.tabControl1.Controls.Add(this.INFO);
             this.tabControl1.ImageList = this.icons;
             this.tabControl1.ItemSize = new System.Drawing.Size(100, 100);
-            this.tabControl1.Location = new System.Drawing.Point(-2, 1);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Location = new System.Drawing.Point(-3, 1);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.ShowToolTips = true;
-            this.tabControl1.Size = new System.Drawing.Size(649, 411);
+            this.tabControl1.Size = new System.Drawing.Size(865, 506);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
@@ -141,10 +177,10 @@
             this.MCU.Controls.Add(this.mcuSelectGroup);
             this.MCU.ImageIndex = 1;
             this.MCU.Location = new System.Drawing.Point(104, 4);
-            this.MCU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MCU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MCU.Name = "MCU";
-            this.MCU.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MCU.Size = new System.Drawing.Size(541, 403);
+            this.MCU.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MCU.Size = new System.Drawing.Size(757, 498);
             this.MCU.TabIndex = 0;
             this.MCU.ToolTipText = "MCU Flash &&& Settings";
             // 
@@ -159,11 +195,11 @@
             this.filesSelectGroup.Controls.Add(this.fileWriteLabel);
             this.filesSelectGroup.Controls.Add(this.Search);
             this.filesSelectGroup.Controls.Add(this.pictureBox4);
-            this.filesSelectGroup.Location = new System.Drawing.Point(4, 178);
-            this.filesSelectGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.filesSelectGroup.Location = new System.Drawing.Point(5, 219);
+            this.filesSelectGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.filesSelectGroup.Name = "filesSelectGroup";
-            this.filesSelectGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.filesSelectGroup.Size = new System.Drawing.Size(534, 81);
+            this.filesSelectGroup.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.filesSelectGroup.Size = new System.Drawing.Size(712, 100);
             this.filesSelectGroup.TabIndex = 5;
             this.filesSelectGroup.TabStop = false;
             this.filesSelectGroup.Text = "Files";
@@ -174,10 +210,10 @@
             this.SearchReadFileButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SearchReadFileButton.FlatAppearance.BorderSize = 0;
             this.SearchReadFileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchReadFileButton.Location = new System.Drawing.Point(510, 45);
-            this.SearchReadFileButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SearchReadFileButton.Location = new System.Drawing.Point(680, 55);
+            this.SearchReadFileButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SearchReadFileButton.Name = "SearchReadFileButton";
-            this.SearchReadFileButton.Size = new System.Drawing.Size(14, 14);
+            this.SearchReadFileButton.Size = new System.Drawing.Size(19, 17);
             this.SearchReadFileButton.TabIndex = 9;
             this.SearchReadFileButton.UseVisualStyleBackColor = true;
             this.SearchReadFileButton.Click += new System.EventHandler(this.SearchReadFileButton_Click);
@@ -188,10 +224,10 @@
             this.SearchWriteFileButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SearchWriteFileButton.FlatAppearance.BorderSize = 0;
             this.SearchWriteFileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchWriteFileButton.Location = new System.Drawing.Point(510, 20);
-            this.SearchWriteFileButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SearchWriteFileButton.Location = new System.Drawing.Point(680, 25);
+            this.SearchWriteFileButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SearchWriteFileButton.Name = "SearchWriteFileButton";
-            this.SearchWriteFileButton.Size = new System.Drawing.Size(14, 14);
+            this.SearchWriteFileButton.Size = new System.Drawing.Size(19, 17);
             this.SearchWriteFileButton.TabIndex = 8;
             this.SearchWriteFileButton.UseVisualStyleBackColor = true;
             this.SearchWriteFileButton.Click += new System.EventHandler(this.SearchWriteFileButton_Click);
@@ -205,11 +241,11 @@
             this.SaveSelect.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.SaveSelect.FormattingEnabled = true;
             this.SaveSelect.IntegralHeight = false;
-            this.SaveSelect.ItemHeight = 13;
-            this.SaveSelect.Location = new System.Drawing.Point(110, 42);
-            this.SaveSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SaveSelect.ItemHeight = 16;
+            this.SaveSelect.Location = new System.Drawing.Point(147, 52);
+            this.SaveSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SaveSelect.Name = "SaveSelect";
-            this.SaveSelect.Size = new System.Drawing.Size(397, 21);
+            this.SaveSelect.Size = new System.Drawing.Size(528, 24);
             this.SaveSelect.TabIndex = 12;
             this.SaveSelect.Text = "Please select a file...";
             this.SaveSelect.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SaveSelect_MouseDown);
@@ -219,11 +255,10 @@
             this.fileSaveLabel.AutoSize = true;
             this.fileSaveLabel.BackColor = System.Drawing.Color.Transparent;
             this.fileSaveLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.fileSaveLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.fileSaveLabel.Location = new System.Drawing.Point(65, 42);
-            this.fileSaveLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fileSaveLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.fileSaveLabel.Location = new System.Drawing.Point(87, 52);
             this.fileSaveLabel.Name = "fileSaveLabel";
-            this.fileSaveLabel.Size = new System.Drawing.Size(41, 19);
+            this.fileSaveLabel.Size = new System.Drawing.Size(50, 23);
             this.fileSaveLabel.TabIndex = 11;
             this.fileSaveLabel.Text = "Save:";
             // 
@@ -236,11 +271,11 @@
             this.FileSelect.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.FileSelect.FormattingEnabled = true;
             this.FileSelect.IntegralHeight = false;
-            this.FileSelect.ItemHeight = 13;
-            this.FileSelect.Location = new System.Drawing.Point(110, 17);
-            this.FileSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FileSelect.ItemHeight = 16;
+            this.FileSelect.Location = new System.Drawing.Point(147, 21);
+            this.FileSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FileSelect.Name = "FileSelect";
-            this.FileSelect.Size = new System.Drawing.Size(397, 21);
+            this.FileSelect.Size = new System.Drawing.Size(528, 24);
             this.FileSelect.TabIndex = 10;
             this.FileSelect.Text = "Please select a file...";
             this.FileSelect.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FileSelect_MouseDown);
@@ -250,11 +285,10 @@
             this.fileWriteLabel.AutoSize = true;
             this.fileWriteLabel.BackColor = System.Drawing.Color.Transparent;
             this.fileWriteLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.fileWriteLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.fileWriteLabel.Location = new System.Drawing.Point(65, 18);
-            this.fileWriteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fileWriteLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.fileWriteLabel.Location = new System.Drawing.Point(87, 22);
             this.fileWriteLabel.Name = "fileWriteLabel";
-            this.fileWriteLabel.Size = new System.Drawing.Size(47, 19);
+            this.fileWriteLabel.Size = new System.Drawing.Size(55, 23);
             this.fileWriteLabel.TabIndex = 9;
             this.fileWriteLabel.Text = "Write:";
             // 
@@ -263,20 +297,20 @@
             this.Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Search.FlatAppearance.BorderSize = 0;
             this.Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Search.Location = new System.Drawing.Point(510, 48);
-            this.Search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Search.Location = new System.Drawing.Point(680, 59);
+            this.Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(20, 21);
+            this.Search.Size = new System.Drawing.Size(27, 26);
             this.Search.TabIndex = 7;
             this.Search.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::AvrFlasherTool.Properties.Resources.FileIco;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 16);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 20);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox4.Size = new System.Drawing.Size(85, 80);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -286,11 +320,11 @@
             this.consoleGroup.Controls.Add(this.ReadButton);
             this.consoleGroup.Controls.Add(this.ConsoleTextBox);
             this.consoleGroup.Controls.Add(this.FlashButton);
-            this.consoleGroup.Location = new System.Drawing.Point(4, 264);
-            this.consoleGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.consoleGroup.Location = new System.Drawing.Point(5, 325);
+            this.consoleGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.consoleGroup.Name = "consoleGroup";
-            this.consoleGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.consoleGroup.Size = new System.Drawing.Size(534, 128);
+            this.consoleGroup.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.consoleGroup.Size = new System.Drawing.Size(712, 158);
             this.consoleGroup.TabIndex = 4;
             this.consoleGroup.TabStop = false;
             this.consoleGroup.Text = "Console";
@@ -303,21 +337,21 @@
             this.ReadButton.FlatAppearance.BorderSize = 0;
             this.ReadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReadButton.ImageIndex = 5;
-            this.ReadButton.Location = new System.Drawing.Point(481, 75);
-            this.ReadButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ReadButton.Location = new System.Drawing.Point(641, 92);
+            this.ReadButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReadButton.Name = "ReadButton";
-            this.ReadButton.Size = new System.Drawing.Size(49, 53);
+            this.ReadButton.Size = new System.Drawing.Size(65, 65);
             this.ReadButton.TabIndex = 6;
             this.ReadButton.UseVisualStyleBackColor = false;
             this.ReadButton.Click += new System.EventHandler(this.ReadButton_Click);
             // 
             // ConsoleTextBox
             // 
-            this.ConsoleTextBox.Location = new System.Drawing.Point(4, 19);
-            this.ConsoleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ConsoleTextBox.Location = new System.Drawing.Point(5, 23);
+            this.ConsoleTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ConsoleTextBox.Name = "ConsoleTextBox";
             this.ConsoleTextBox.ReadOnly = true;
-            this.ConsoleTextBox.Size = new System.Drawing.Size(473, 105);
+            this.ConsoleTextBox.Size = new System.Drawing.Size(629, 128);
             this.ConsoleTextBox.TabIndex = 1;
             this.ConsoleTextBox.Text = "";
             // 
@@ -328,11 +362,10 @@
             this.FlashButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.FlashButton.FlatAppearance.BorderSize = 0;
             this.FlashButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FlashButton.ImageIndex = 5;
-            this.FlashButton.Location = new System.Drawing.Point(481, 17);
-            this.FlashButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FlashButton.Location = new System.Drawing.Point(641, 21);
+            this.FlashButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FlashButton.Name = "FlashButton";
-            this.FlashButton.Size = new System.Drawing.Size(49, 53);
+            this.FlashButton.Size = new System.Drawing.Size(65, 65);
             this.FlashButton.TabIndex = 0;
             this.FlashButton.UseVisualStyleBackColor = false;
             this.FlashButton.Click += new System.EventHandler(this.FlashButton_Click);
@@ -347,11 +380,11 @@
             this.programmerSelectGroup.Controls.Add(this.PortSelect);
             this.programmerSelectGroup.Controls.Add(this.ProgSelect);
             this.programmerSelectGroup.Controls.Add(this.pictureBox2);
-            this.programmerSelectGroup.Location = new System.Drawing.Point(4, 92);
-            this.programmerSelectGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.programmerSelectGroup.Location = new System.Drawing.Point(5, 113);
+            this.programmerSelectGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.programmerSelectGroup.Name = "programmerSelectGroup";
-            this.programmerSelectGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.programmerSelectGroup.Size = new System.Drawing.Size(534, 81);
+            this.programmerSelectGroup.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.programmerSelectGroup.Size = new System.Drawing.Size(712, 100);
             this.programmerSelectGroup.TabIndex = 3;
             this.programmerSelectGroup.TabStop = false;
             this.programmerSelectGroup.Text = "Programmer";
@@ -359,10 +392,10 @@
             // checkPortBox
             // 
             this.checkPortBox.AutoSize = true;
-            this.checkPortBox.Location = new System.Drawing.Point(510, 51);
-            this.checkPortBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkPortBox.Location = new System.Drawing.Point(680, 63);
+            this.checkPortBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkPortBox.Name = "checkPortBox";
-            this.checkPortBox.Size = new System.Drawing.Size(15, 14);
+            this.checkPortBox.Size = new System.Drawing.Size(18, 17);
             this.checkPortBox.TabIndex = 6;
             this.toolTipButtons.SetToolTip(this.checkPortBox, "Enables checking for port availability");
             this.checkPortBox.UseVisualStyleBackColor = true;
@@ -374,10 +407,10 @@
             this.RefreshPortsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.RefreshPortsButton.FlatAppearance.BorderSize = 0;
             this.RefreshPortsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RefreshPortsButton.Location = new System.Drawing.Point(510, 24);
-            this.RefreshPortsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RefreshPortsButton.Location = new System.Drawing.Point(680, 30);
+            this.RefreshPortsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RefreshPortsButton.Name = "RefreshPortsButton";
-            this.RefreshPortsButton.Size = new System.Drawing.Size(14, 14);
+            this.RefreshPortsButton.Size = new System.Drawing.Size(19, 17);
             this.RefreshPortsButton.TabIndex = 7;
             this.toolTipButtons.SetToolTip(this.RefreshPortsButton, "Refresh ports.");
             this.RefreshPortsButton.UseVisualStyleBackColor = true;
@@ -388,11 +421,10 @@
             this.portProgLabel.AutoSize = true;
             this.portProgLabel.BackColor = System.Drawing.Color.Transparent;
             this.portProgLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.portProgLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.portProgLabel.Location = new System.Drawing.Point(65, 46);
-            this.portProgLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.portProgLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.portProgLabel.Location = new System.Drawing.Point(87, 57);
             this.portProgLabel.Name = "portProgLabel";
-            this.portProgLabel.Size = new System.Drawing.Size(38, 19);
+            this.portProgLabel.Size = new System.Drawing.Size(46, 23);
             this.portProgLabel.TabIndex = 6;
             this.portProgLabel.Text = "Port:";
             // 
@@ -401,11 +433,10 @@
             this.typeProgLabel.AutoSize = true;
             this.typeProgLabel.BackColor = System.Drawing.Color.Transparent;
             this.typeProgLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.typeProgLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.typeProgLabel.Location = new System.Drawing.Point(65, 19);
-            this.typeProgLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.typeProgLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.typeProgLabel.Location = new System.Drawing.Point(87, 23);
             this.typeProgLabel.Name = "typeProgLabel";
-            this.typeProgLabel.Size = new System.Drawing.Size(41, 19);
+            this.typeProgLabel.Size = new System.Drawing.Size(49, 23);
             this.typeProgLabel.TabIndex = 5;
             this.typeProgLabel.Text = "Type:";
             // 
@@ -417,11 +448,11 @@
             this.PortSelect.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.PortSelect.FormattingEnabled = true;
             this.PortSelect.IntegralHeight = false;
-            this.PortSelect.ItemHeight = 13;
-            this.PortSelect.Location = new System.Drawing.Point(110, 48);
-            this.PortSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PortSelect.ItemHeight = 16;
+            this.PortSelect.Location = new System.Drawing.Point(147, 59);
+            this.PortSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PortSelect.Name = "PortSelect";
-            this.PortSelect.Size = new System.Drawing.Size(397, 21);
+            this.PortSelect.Size = new System.Drawing.Size(528, 24);
             this.PortSelect.TabIndex = 4;
             this.PortSelect.Text = "No connected devices...";
             // 
@@ -432,20 +463,20 @@
             this.ProgSelect.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.ProgSelect.FormattingEnabled = true;
             this.ProgSelect.IntegralHeight = false;
-            this.ProgSelect.ItemHeight = 13;
-            this.ProgSelect.Location = new System.Drawing.Point(110, 21);
-            this.ProgSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ProgSelect.ItemHeight = 16;
+            this.ProgSelect.Location = new System.Drawing.Point(147, 26);
+            this.ProgSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProgSelect.Name = "ProgSelect";
-            this.ProgSelect.Size = new System.Drawing.Size(397, 21);
+            this.ProgSelect.Size = new System.Drawing.Size(528, 24);
             this.ProgSelect.TabIndex = 1;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AvrFlasherTool.Properties.Resources.Programmer;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 12);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(68, 69);
+            this.pictureBox2.Size = new System.Drawing.Size(91, 85);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -462,11 +493,11 @@
             this.mcuSelectGroup.Controls.Add(this.label3);
             this.mcuSelectGroup.Controls.Add(this.MCUSelect);
             this.mcuSelectGroup.Controls.Add(this.pictureBox1);
-            this.mcuSelectGroup.Location = new System.Drawing.Point(4, 6);
-            this.mcuSelectGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mcuSelectGroup.Location = new System.Drawing.Point(5, 7);
+            this.mcuSelectGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mcuSelectGroup.Name = "mcuSelectGroup";
-            this.mcuSelectGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.mcuSelectGroup.Size = new System.Drawing.Size(534, 86);
+            this.mcuSelectGroup.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mcuSelectGroup.Size = new System.Drawing.Size(712, 106);
             this.mcuSelectGroup.TabIndex = 2;
             this.mcuSelectGroup.TabStop = false;
             this.mcuSelectGroup.Text = "MCU";
@@ -476,10 +507,10 @@
             this.checkEraseBox.AutoSize = true;
             this.checkEraseBox.Checked = true;
             this.checkEraseBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkEraseBox.Location = new System.Drawing.Point(510, 50);
-            this.checkEraseBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkEraseBox.Location = new System.Drawing.Point(680, 62);
+            this.checkEraseBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkEraseBox.Name = "checkEraseBox";
-            this.checkEraseBox.Size = new System.Drawing.Size(15, 14);
+            this.checkEraseBox.Size = new System.Drawing.Size(18, 17);
             this.checkEraseBox.TabIndex = 11;
             this.toolTipButtons.SetToolTip(this.checkEraseBox, "Enables extended logging.");
             this.checkEraseBox.UseVisualStyleBackColor = true;
@@ -489,11 +520,10 @@
             this.eraseChipLabel.AutoSize = true;
             this.eraseChipLabel.BackColor = System.Drawing.Color.Transparent;
             this.eraseChipLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.eraseChipLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.eraseChipLabel.Location = new System.Drawing.Point(338, 45);
-            this.eraseChipLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.eraseChipLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.eraseChipLabel.Location = new System.Drawing.Point(451, 55);
             this.eraseChipLabel.Name = "eraseChipLabel";
-            this.eraseChipLabel.Size = new System.Drawing.Size(174, 19);
+            this.eraseChipLabel.Size = new System.Drawing.Size(214, 23);
             this.eraseChipLabel.TabIndex = 10;
             this.eraseChipLabel.Text = "Erase chip(recommended):";
             this.toolTipButtons.SetToolTip(this.eraseChipLabel, "Recommended!");
@@ -501,10 +531,10 @@
             // checkForceBox
             // 
             this.checkForceBox.AutoSize = true;
-            this.checkForceBox.Location = new System.Drawing.Point(239, 50);
-            this.checkForceBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkForceBox.Location = new System.Drawing.Point(319, 62);
+            this.checkForceBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkForceBox.Name = "checkForceBox";
-            this.checkForceBox.Size = new System.Drawing.Size(15, 14);
+            this.checkForceBox.Size = new System.Drawing.Size(18, 17);
             this.checkForceBox.TabIndex = 9;
             this.toolTipButtons.SetToolTip(this.checkForceBox, "Enables extended logging.");
             this.checkForceBox.UseVisualStyleBackColor = true;
@@ -514,11 +544,10 @@
             this.forceLabel.AutoSize = true;
             this.forceLabel.BackColor = System.Drawing.Color.Transparent;
             this.forceLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.forceLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.forceLabel.Location = new System.Drawing.Point(169, 45);
-            this.forceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.forceLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.forceLabel.Location = new System.Drawing.Point(225, 55);
             this.forceLabel.Name = "forceLabel";
-            this.forceLabel.Size = new System.Drawing.Size(72, 19);
+            this.forceLabel.Size = new System.Drawing.Size(88, 23);
             this.forceLabel.TabIndex = 8;
             this.forceLabel.Text = "Force (-F):";
             this.toolTipButtons.SetToolTip(this.forceLabel, "Removes chip signature check");
@@ -528,10 +557,10 @@
             this.checkVerboseBox.AutoSize = true;
             this.checkVerboseBox.Checked = true;
             this.checkVerboseBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkVerboseBox.Location = new System.Drawing.Point(151, 50);
-            this.checkVerboseBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkVerboseBox.Location = new System.Drawing.Point(201, 62);
+            this.checkVerboseBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkVerboseBox.Name = "checkVerboseBox";
-            this.checkVerboseBox.Size = new System.Drawing.Size(15, 14);
+            this.checkVerboseBox.Size = new System.Drawing.Size(18, 17);
             this.checkVerboseBox.TabIndex = 7;
             this.toolTipButtons.SetToolTip(this.checkVerboseBox, "Enables extended logging.");
             this.checkVerboseBox.UseVisualStyleBackColor = true;
@@ -541,11 +570,10 @@
             this.verboseLogging.AutoSize = true;
             this.verboseLogging.BackColor = System.Drawing.Color.Transparent;
             this.verboseLogging.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.verboseLogging.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.verboseLogging.Location = new System.Drawing.Point(65, 45);
-            this.verboseLogging.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.verboseLogging.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.verboseLogging.Location = new System.Drawing.Point(87, 55);
             this.verboseLogging.Name = "verboseLogging";
-            this.verboseLogging.Size = new System.Drawing.Size(88, 19);
+            this.verboseLogging.Size = new System.Drawing.Size(108, 23);
             this.verboseLogging.TabIndex = 7;
             this.verboseLogging.Text = "Verbose (-v):";
             this.toolTipButtons.SetToolTip(this.verboseLogging, "Enable extended logging");
@@ -555,11 +583,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(65, 16);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(87, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 19);
+            this.label3.Size = new System.Drawing.Size(53, 23);
             this.label3.TabIndex = 6;
             this.label3.Text = "MCU:";
             // 
@@ -570,34 +597,34 @@
             this.MCUSelect.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.MCUSelect.FormattingEnabled = true;
             this.MCUSelect.IntegralHeight = false;
-            this.MCUSelect.ItemHeight = 13;
-            this.MCUSelect.Location = new System.Drawing.Point(110, 15);
-            this.MCUSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MCUSelect.ItemHeight = 16;
+            this.MCUSelect.Location = new System.Drawing.Point(147, 18);
+            this.MCUSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MCUSelect.Name = "MCUSelect";
-            this.MCUSelect.Size = new System.Drawing.Size(412, 21);
+            this.MCUSelect.Size = new System.Drawing.Size(548, 24);
             this.MCUSelect.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AvrFlasherTool.Properties.Resources.MCU_info;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 69);
+            this.pictureBox1.Size = new System.Drawing.Size(91, 85);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // FUSES
             // 
-            this.FUSES.Controls.Add(this.autoSettingsGroup);
-            this.FUSES.Controls.Add(this.consoleFuseGroup);
             this.FUSES.Controls.Add(this.manualSettingsGroup);
+            this.FUSES.Controls.Add(this.groupBox4);
+            this.FUSES.Controls.Add(this.autoSettingsGroup);
             this.FUSES.ImageIndex = 0;
             this.FUSES.Location = new System.Drawing.Point(104, 4);
-            this.FUSES.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FUSES.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FUSES.Name = "FUSES";
-            this.FUSES.Size = new System.Drawing.Size(541, 403);
+            this.FUSES.Size = new System.Drawing.Size(757, 498);
             this.FUSES.TabIndex = 3;
             this.FUSES.ToolTipText = "Fuses &&& Lock bites";
             this.FUSES.UseVisualStyleBackColor = true;
@@ -605,46 +632,701 @@
             // manualSettingsGroup
             // 
             this.manualSettingsGroup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.manualSettingsGroup.Controls.Add(this.extByteLabel);
-            this.manualSettingsGroup.Controls.Add(this.panel3);
-            this.manualSettingsGroup.Controls.Add(this.highByteLabel);
-            this.manualSettingsGroup.Controls.Add(this.panel2);
-            this.manualSettingsGroup.Controls.Add(this.panel1);
-            this.manualSettingsGroup.Controls.Add(this.lowByteLabel);
+            this.manualSettingsGroup.Controls.Add(this.label8);
+            this.manualSettingsGroup.Controls.Add(this.panel4);
+            this.manualSettingsGroup.Controls.Add(this.label10);
+            this.manualSettingsGroup.Controls.Add(this.panel5);
+            this.manualSettingsGroup.Controls.Add(this.panel6);
+            this.manualSettingsGroup.Controls.Add(this.label13);
             this.manualSettingsGroup.Controls.Add(this.manualSettingsCheck);
-            this.manualSettingsGroup.Controls.Add(this.mcuSettingsIcon);
-            this.manualSettingsGroup.Location = new System.Drawing.Point(4, 170);
-            this.manualSettingsGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.manualSettingsGroup.Controls.Add(this.pictureBox6);
+            this.manualSettingsGroup.Enabled = false;
+            this.manualSettingsGroup.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.manualSettingsGroup.Location = new System.Drawing.Point(8, 223);
+            this.manualSettingsGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.manualSettingsGroup.Name = "manualSettingsGroup";
-            this.manualSettingsGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.manualSettingsGroup.Size = new System.Drawing.Size(534, 90);
-            this.manualSettingsGroup.TabIndex = 6;
+            this.manualSettingsGroup.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.manualSettingsGroup.Size = new System.Drawing.Size(712, 100);
+            this.manualSettingsGroup.TabIndex = 13;
             this.manualSettingsGroup.TabStop = false;
             this.manualSettingsGroup.Text = "Manual Settings";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(344, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(87, 25);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Ext Byte:";
+            this.toolTipButtons.SetToolTip(this.label8, "Enable extended logging");
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.ExByteText);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.panel4.Location = new System.Drawing.Point(343, 50);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(58, 24);
+            this.panel4.TabIndex = 14;
+            // 
+            // ExByteText
+            // 
+            this.ExByteText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ExByteText.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F);
+            this.ExByteText.Location = new System.Drawing.Point(25, -1);
+            this.ExByteText.Margin = new System.Windows.Forms.Padding(4);
+            this.ExByteText.MaxLength = 2;
+            this.ExByteText.Name = "ExByteText";
+            this.ExByteText.Size = new System.Drawing.Size(32, 25);
+            this.ExByteText.TabIndex = 9;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label9.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F);
+            this.label9.Location = new System.Drawing.Point(0, -1);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(31, 25);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "0x";
+            this.toolTipButtons.SetToolTip(this.label9, "Enable extended logging");
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label10.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(215, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(101, 25);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "High Byte:";
+            this.toolTipButtons.SetToolTip(this.label10, "Enable extended logging");
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.HighByteText);
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.panel5.Location = new System.Drawing.Point(220, 50);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(58, 24);
+            this.panel5.TabIndex = 12;
+            // 
+            // HighByteText
+            // 
+            this.HighByteText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.HighByteText.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F);
+            this.HighByteText.Location = new System.Drawing.Point(25, -1);
+            this.HighByteText.Margin = new System.Windows.Forms.Padding(4);
+            this.HighByteText.MaxLength = 2;
+            this.HighByteText.Name = "HighByteText";
+            this.HighByteText.Size = new System.Drawing.Size(32, 25);
+            this.HighByteText.TabIndex = 9;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label11.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F);
+            this.label11.Location = new System.Drawing.Point(0, -1);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 25);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "0x";
+            this.toolTipButtons.SetToolTip(this.label11, "Enable extended logging");
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.LowByteText);
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.panel6.Location = new System.Drawing.Point(101, 50);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(58, 24);
+            this.panel6.TabIndex = 11;
+            // 
+            // LowByteText
+            // 
+            this.LowByteText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LowByteText.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F);
+            this.LowByteText.Location = new System.Drawing.Point(25, -1);
+            this.LowByteText.Margin = new System.Windows.Forms.Padding(4);
+            this.LowByteText.MaxLength = 2;
+            this.LowByteText.Name = "LowByteText";
+            this.LowByteText.Size = new System.Drawing.Size(32, 25);
+            this.LowByteText.TabIndex = 9;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label12.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F);
+            this.label12.Location = new System.Drawing.Point(0, -1);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(31, 25);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "0x";
+            this.toolTipButtons.SetToolTip(this.label12, "Enable extended logging");
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label13.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(96, 22);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(94, 25);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Low Byte:";
+            this.toolTipButtons.SetToolTip(this.label13, "Enable extended logging");
+            // 
+            // manualSettingsCheck
+            // 
+            this.manualSettingsCheck.AutoSize = true;
+            this.manualSettingsCheck.Location = new System.Drawing.Point(116, 0);
+            this.manualSettingsCheck.Margin = new System.Windows.Forms.Padding(4);
+            this.manualSettingsCheck.Name = "manualSettingsCheck";
+            this.manualSettingsCheck.Size = new System.Drawing.Size(18, 17);
+            this.manualSettingsCheck.TabIndex = 5;
+            this.manualSettingsCheck.UseVisualStyleBackColor = true;
+            this.manualSettingsCheck.CheckedChanged += new System.EventHandler(this.manualSettingsCheck_CheckedChanged);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::AvrFlasherTool.Properties.Resources.MCU_settings;
+            this.pictureBox6.Location = new System.Drawing.Point(5, 21);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(85, 80);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.readFuseSettings);
+            this.groupBox4.Controls.Add(this.ConsoleFuseTextBox);
+            this.groupBox4.Controls.Add(this.flashFuseButton);
+            this.groupBox4.Location = new System.Drawing.Point(8, 327);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(712, 158);
+            this.groupBox4.TabIndex = 12;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Console";
+            // 
+            // readFuseSettings
+            // 
+            this.readFuseSettings.BackColor = System.Drawing.Color.Transparent;
+            this.readFuseSettings.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Read;
+            this.readFuseSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.readFuseSettings.FlatAppearance.BorderSize = 0;
+            this.readFuseSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.readFuseSettings.ImageIndex = 5;
+            this.readFuseSettings.Location = new System.Drawing.Point(641, 92);
+            this.readFuseSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.readFuseSettings.Name = "readFuseSettings";
+            this.readFuseSettings.Size = new System.Drawing.Size(65, 65);
+            this.readFuseSettings.TabIndex = 6;
+            this.readFuseSettings.UseVisualStyleBackColor = false;
+            this.readFuseSettings.Click += new System.EventHandler(this.readFuseSettings_Click);
+            // 
+            // ConsoleFuseTextBox
+            // 
+            this.ConsoleFuseTextBox.Location = new System.Drawing.Point(5, 23);
+            this.ConsoleFuseTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ConsoleFuseTextBox.Name = "ConsoleFuseTextBox";
+            this.ConsoleFuseTextBox.ReadOnly = true;
+            this.ConsoleFuseTextBox.Size = new System.Drawing.Size(629, 128);
+            this.ConsoleFuseTextBox.TabIndex = 1;
+            this.ConsoleFuseTextBox.Text = "";
+            // 
+            // flashFuseButton
+            // 
+            this.flashFuseButton.BackColor = System.Drawing.Color.Transparent;
+            this.flashFuseButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.MCU_Flash;
+            this.flashFuseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flashFuseButton.FlatAppearance.BorderSize = 0;
+            this.flashFuseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.flashFuseButton.Location = new System.Drawing.Point(641, 21);
+            this.flashFuseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flashFuseButton.Name = "flashFuseButton";
+            this.flashFuseButton.Size = new System.Drawing.Size(65, 65);
+            this.flashFuseButton.TabIndex = 0;
+            this.flashFuseButton.UseVisualStyleBackColor = false;
+            this.flashFuseButton.Click += new System.EventHandler(this.flashFuseButton_Click);
+            // 
+            // autoSettingsGroup
+            // 
+            this.autoSettingsGroup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.autoSettingsGroup.Controls.Add(this.eesaveCheck);
+            this.autoSettingsGroup.Controls.Add(this.spiCheck);
+            this.autoSettingsGroup.Controls.Add(this.wdCheck);
+            this.autoSettingsGroup.Controls.Add(this.autoSettingsCheck);
+            this.autoSettingsGroup.Controls.Add(this.eesaveEnableLabel);
+            this.autoSettingsGroup.Controls.Add(this.spiEnableLabel);
+            this.autoSettingsGroup.Controls.Add(this.watchdogTimerLabel);
+            this.autoSettingsGroup.Controls.Add(this.resetIOCheck);
+            this.autoSettingsGroup.Controls.Add(this.bootCheck);
+            this.autoSettingsGroup.Controls.Add(this.bodenCheck);
+            this.autoSettingsGroup.Controls.Add(this.bootSizeBox);
+            this.autoSettingsGroup.Controls.Add(this.bootSizeLabel);
+            this.autoSettingsGroup.Controls.Add(this.bodLvlLabel);
+            this.autoSettingsGroup.Controls.Add(this.freqLabel);
+            this.autoSettingsGroup.Controls.Add(this.bodLevelBox);
+            this.autoSettingsGroup.Controls.Add(this.freqComboBox);
+            this.autoSettingsGroup.Controls.Add(this.pictureBox3);
+            this.autoSettingsGroup.Location = new System.Drawing.Point(8, 7);
+            this.autoSettingsGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.autoSettingsGroup.Name = "autoSettingsGroup";
+            this.autoSettingsGroup.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.autoSettingsGroup.Size = new System.Drawing.Size(712, 210);
+            this.autoSettingsGroup.TabIndex = 10;
+            this.autoSettingsGroup.TabStop = false;
+            this.autoSettingsGroup.Text = "Auto Settings(beta!)";
+            // 
+            // eesaveCheck
+            // 
+            this.eesaveCheck.AutoSize = true;
+            this.eesaveCheck.Location = new System.Drawing.Point(12, 179);
+            this.eesaveCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.eesaveCheck.Name = "eesaveCheck";
+            this.eesaveCheck.Size = new System.Drawing.Size(18, 17);
+            this.eesaveCheck.TabIndex = 19;
+            this.eesaveCheck.UseVisualStyleBackColor = true;
+            this.eesaveCheck.CheckedChanged += new System.EventHandler(this.eesaveCheck_CheckedChanged);
+            // 
+            // spiCheck
+            // 
+            this.spiCheck.AutoSize = true;
+            this.spiCheck.Checked = true;
+            this.spiCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.spiCheck.Location = new System.Drawing.Point(12, 152);
+            this.spiCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.spiCheck.Name = "spiCheck";
+            this.spiCheck.Size = new System.Drawing.Size(18, 17);
+            this.spiCheck.TabIndex = 18;
+            this.spiCheck.UseVisualStyleBackColor = true;
+            this.spiCheck.CheckedChanged += new System.EventHandler(this.spiCheck_CheckedChanged);
+            // 
+            // wdCheck
+            // 
+            this.wdCheck.AutoSize = true;
+            this.wdCheck.Location = new System.Drawing.Point(12, 125);
+            this.wdCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.wdCheck.Name = "wdCheck";
+            this.wdCheck.Size = new System.Drawing.Size(18, 17);
+            this.wdCheck.TabIndex = 17;
+            this.wdCheck.UseVisualStyleBackColor = true;
+            this.wdCheck.CheckedChanged += new System.EventHandler(this.wdCheck_CheckedChanged);
+            // 
+            // autoSettingsCheck
+            // 
+            this.autoSettingsCheck.AutoSize = true;
+            this.autoSettingsCheck.Checked = true;
+            this.autoSettingsCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.autoSettingsCheck.Location = new System.Drawing.Point(140, 0);
+            this.autoSettingsCheck.Margin = new System.Windows.Forms.Padding(4);
+            this.autoSettingsCheck.Name = "autoSettingsCheck";
+            this.autoSettingsCheck.Size = new System.Drawing.Size(18, 17);
+            this.autoSettingsCheck.TabIndex = 8;
+            this.autoSettingsCheck.UseVisualStyleBackColor = true;
+            this.autoSettingsCheck.CheckedChanged += new System.EventHandler(this.autoSettingsCheck_CheckedChanged);
+            // 
+            // eesaveEnableLabel
+            // 
+            this.eesaveEnableLabel.AutoSize = true;
+            this.eesaveEnableLabel.BackColor = System.Drawing.Color.Transparent;
+            this.eesaveEnableLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.eesaveEnableLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.eesaveEnableLabel.Location = new System.Drawing.Point(36, 173);
+            this.eesaveEnableLabel.Name = "eesaveEnableLabel";
+            this.eesaveEnableLabel.Size = new System.Drawing.Size(453, 23);
+            this.eesaveEnableLabel.TabIndex = 16;
+            this.eesaveEnableLabel.Text = "Save EEPROM contents when erasing a chip [EESAVE = 0]";
+            // 
+            // spiEnableLabel
+            // 
+            this.spiEnableLabel.AutoSize = true;
+            this.spiEnableLabel.BackColor = System.Drawing.Color.Transparent;
+            this.spiEnableLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.spiEnableLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.spiEnableLabel.Location = new System.Drawing.Point(36, 146);
+            this.spiEnableLabel.Name = "spiEnableLabel";
+            this.spiEnableLabel.Size = new System.Drawing.Size(380, 23);
+            this.spiEnableLabel.TabIndex = 15;
+            this.spiEnableLabel.Text = "Enable In-Circuit Programming (SPI) [SPIEN = 1]";
+            // 
+            // watchdogTimerLabel
+            // 
+            this.watchdogTimerLabel.AutoSize = true;
+            this.watchdogTimerLabel.BackColor = System.Drawing.Color.Transparent;
+            this.watchdogTimerLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.watchdogTimerLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.watchdogTimerLabel.Location = new System.Drawing.Point(36, 119);
+            this.watchdogTimerLabel.Name = "watchdogTimerLabel";
+            this.watchdogTimerLabel.Size = new System.Drawing.Size(339, 23);
+            this.watchdogTimerLabel.TabIndex = 14;
+            this.watchdogTimerLabel.Text = "Watchdog timer is always on [WDTON = 1]";
+            // 
+            // resetIOCheck
+            // 
+            this.resetIOCheck.AutoSize = true;
+            this.resetIOCheck.Location = new System.Drawing.Point(683, 30);
+            this.resetIOCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.resetIOCheck.Name = "resetIOCheck";
+            this.resetIOCheck.Size = new System.Drawing.Size(18, 17);
+            this.resetIOCheck.TabIndex = 13;
+            this.toolTipButtons.SetToolTip(this.resetIOCheck, "External reset enable (PC6 used for I / O) [RSTDISBL=0]");
+            this.resetIOCheck.UseVisualStyleBackColor = true;
+            this.resetIOCheck.CheckedChanged += new System.EventHandler(this.resetIOCheck_CheckedChanged);
+            // 
+            // bootCheck
+            // 
+            this.bootCheck.AutoSize = true;
+            this.bootCheck.Location = new System.Drawing.Point(683, 95);
+            this.bootCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bootCheck.Name = "bootCheck";
+            this.bootCheck.Size = new System.Drawing.Size(18, 17);
+            this.bootCheck.TabIndex = 12;
+            this.toolTipButtons.SetToolTip(this.bootCheck, "Go to bootloader after reset [BOOTRST=0]");
+            this.bootCheck.UseVisualStyleBackColor = true;
+            this.bootCheck.CheckedChanged += new System.EventHandler(this.bootCheck_CheckedChanged);
+            // 
+            // bodenCheck
+            // 
+            this.bodenCheck.AutoSize = true;
+            this.bodenCheck.Location = new System.Drawing.Point(683, 63);
+            this.bodenCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bodenCheck.Name = "bodenCheck";
+            this.bodenCheck.Size = new System.Drawing.Size(18, 17);
+            this.bodenCheck.TabIndex = 11;
+            this.toolTipButtons.SetToolTip(this.bodenCheck, "Power monitor is on[BODEN = 1]");
+            this.bodenCheck.UseVisualStyleBackColor = true;
+            this.bodenCheck.CheckedChanged += new System.EventHandler(this.bodenCheck_CheckedChanged);
+            // 
+            // bootSizeBox
+            // 
+            this.bootSizeBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.bootSizeBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.bootSizeBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bootSizeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bootSizeBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bootSizeBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.bootSizeBox.FormattingEnabled = true;
+            this.bootSizeBox.IntegralHeight = false;
+            this.bootSizeBox.ItemHeight = 16;
+            this.bootSizeBox.Items.AddRange(new object[] {
+            "Bootloader size = 1024 words, Bootloader address = $0C00; [BOOTSZ = 00]",
+            "Bootloader size = 512 words, Bootloader address = $0E00; [BOOTSZ = 01]",
+            "Bootloader size = 256 words, Bootloader address = $0F00; [BOOTSZ = 10]",
+            "Bootloader size = 128 words, Bootloader address = $0F80; [BOOTSZ = 11]"});
+            this.bootSizeBox.Location = new System.Drawing.Point(172, 91);
+            this.bootSizeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bootSizeBox.Name = "bootSizeBox";
+            this.bootSizeBox.Size = new System.Drawing.Size(505, 24);
+            this.bootSizeBox.TabIndex = 10;
+            // 
+            // bootSizeLabel
+            // 
+            this.bootSizeLabel.AutoSize = true;
+            this.bootSizeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.bootSizeLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bootSizeLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.bootSizeLabel.Location = new System.Drawing.Point(87, 92);
+            this.bootSizeLabel.Name = "bootSizeLabel";
+            this.bootSizeLabel.Size = new System.Drawing.Size(83, 23);
+            this.bootSizeLabel.TabIndex = 9;
+            this.bootSizeLabel.Text = "Boot size:";
+            // 
+            // bodLvlLabel
+            // 
+            this.bodLvlLabel.AutoSize = true;
+            this.bodLvlLabel.BackColor = System.Drawing.Color.Transparent;
+            this.bodLvlLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bodLvlLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.bodLvlLabel.Location = new System.Drawing.Point(87, 59);
+            this.bodLvlLabel.Name = "bodLvlLabel";
+            this.bodLvlLabel.Size = new System.Drawing.Size(71, 23);
+            this.bodLvlLabel.TabIndex = 6;
+            this.bodLvlLabel.Text = "BOD lvl:";
+            // 
+            // freqLabel
+            // 
+            this.freqLabel.AutoSize = true;
+            this.freqLabel.BackColor = System.Drawing.Color.Transparent;
+            this.freqLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.freqLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.freqLabel.Location = new System.Drawing.Point(87, 26);
+            this.freqLabel.Name = "freqLabel";
+            this.freqLabel.Size = new System.Drawing.Size(47, 23);
+            this.freqLabel.TabIndex = 5;
+            this.freqLabel.Text = "Freq:";
+            // 
+            // bodLevelBox
+            // 
+            this.bodLevelBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.bodLevelBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.bodLevelBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bodLevelBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bodLevelBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bodLevelBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bodLevelBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.bodLevelBox.IntegralHeight = false;
+            this.bodLevelBox.ItemHeight = 16;
+            this.bodLevelBox.Items.AddRange(new object[] {
+            "Power Monitor threshold=4.0 V;·[BODLEVEL = 0]",
+            "Power Monitor threshold=2.7 V;·[BODLEVEL = 1]"});
+            this.bodLevelBox.Location = new System.Drawing.Point(172, 59);
+            this.bodLevelBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bodLevelBox.Name = "bodLevelBox";
+            this.bodLevelBox.Size = new System.Drawing.Size(505, 24);
+            this.bodLevelBox.TabIndex = 4;
+            // 
+            // freqComboBox
+            // 
+            this.freqComboBox.AutoCompleteCustomSource.AddRange(new string[] {
+            "Internal RC oscillator 1MHz; Trigger: 6 CK + 64 ms; [CKSEL = 0001 SUT = 10]",
+            "Internal RC generator 2MHz; Trigger: 6 CK + 64 ms; [CKSEL = 0010 SUT = 10]",
+            "Internal RC oscillator 4MHz; Trigger: 6 CK + 64 ms; [CKSEL = 0011 SUT = 10]",
+            "Internal RC oscillator 8MHz; Trigger: 6 CK + 64 ms; [CKSEL = 0100 SUT = 10]",
+            "External clock signal; Trigger: 6 CK + 64 ms; [CKSEL = 0000 SUT = 10]",
+            "External RC circuit 8.0 MHz - 12.0 MHz; [CKSEL = 1000 SUT = 11]"});
+            this.freqComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.freqComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.freqComboBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.freqComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.freqComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.freqComboBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.freqComboBox.FormattingEnabled = true;
+            this.freqComboBox.IntegralHeight = false;
+            this.freqComboBox.ItemHeight = 16;
+            this.freqComboBox.Items.AddRange(new object[] {
+            "Internal RC oscillator 1MHz; Trigger: 6 CK + 0 ms; [CKSEL = 0001 SUT = 00]",
+            "Internal RC oscillator 1MHz; Trigger: 6 CK + 64 ms; [CKSEL = 0001 SUT = 10]",
+            "Internal RC generator 2MHz; Trigger: 6 CK + 0 ms; [CKSEL = 0010 SUT = 00]",
+            "Internal RC generator 2MHz; Trigger: 6 CK + 64 ms; [CKSEL = 0010 SUT = 10]",
+            "Internal RC generator 4MHz; Trigger: 6 CK + 0 ms; [CKSEL = 0011 SUT = 00]",
+            "Internal RC oscillator 4MHz; Trigger: 6 CK + 64 ms; [CKSEL = 0011 SUT = 10]",
+            "Internal RC oscillator 8MHz; Trigger: 6 CK + 0 ms; [CKSEL = 0100 SUT = 00]",
+            "Internal RC oscillator 8MHz; Trigger: 6 CK + 64 ms; [CKSEL = 0100 SUT = 10]",
+            "External clock signal; Trigger: 6 CK + 64 ms; [CKSEL = 0000 SUT = 10]",
+            "External RC circuit 8.0 MHz - 12.0 MHz; [CKSEL = 1000 SUT = 11]"});
+            this.freqComboBox.Location = new System.Drawing.Point(147, 26);
+            this.freqComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.freqComboBox.Name = "freqComboBox";
+            this.freqComboBox.Size = new System.Drawing.Size(530, 24);
+            this.freqComboBox.TabIndex = 1;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::AvrFlasherTool.Properties.Resources.MCU_Auto;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 15);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(91, 85);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
             // SETTINGS
             // 
+            this.SETTINGS.Controls.Add(this.invertFusesCheck);
+            this.SETTINGS.Controls.Add(this.invertFusesLabel);
+            this.SETTINGS.Controls.Add(this.debugModeCheck);
+            this.SETTINGS.Controls.Add(this.label1);
             this.SETTINGS.ImageIndex = 2;
             this.SETTINGS.Location = new System.Drawing.Point(104, 4);
-            this.SETTINGS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SETTINGS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SETTINGS.Name = "SETTINGS";
-            this.SETTINGS.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.SETTINGS.Size = new System.Drawing.Size(541, 403);
+            this.SETTINGS.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SETTINGS.Size = new System.Drawing.Size(757, 498);
             this.SETTINGS.TabIndex = 1;
             this.SETTINGS.ToolTipText = "App Settings";
             this.SETTINGS.UseVisualStyleBackColor = true;
             // 
+            // invertFusesCheck
+            // 
+            this.invertFusesCheck.AutoSize = true;
+            this.invertFusesCheck.Checked = true;
+            this.invertFusesCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.invertFusesCheck.Location = new System.Drawing.Point(284, 43);
+            this.invertFusesCheck.Name = "invertFusesCheck";
+            this.invertFusesCheck.Size = new System.Drawing.Size(18, 17);
+            this.invertFusesCheck.TabIndex = 20;
+            this.invertFusesCheck.UseVisualStyleBackColor = true;
+            // 
+            // invertFusesLabel
+            // 
+            this.invertFusesLabel.AutoSize = true;
+            this.invertFusesLabel.BackColor = System.Drawing.Color.Transparent;
+            this.invertFusesLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.invertFusesLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.invertFusesLabel.Location = new System.Drawing.Point(6, 43);
+            this.invertFusesLabel.Name = "invertFusesLabel";
+            this.invertFusesLabel.Size = new System.Drawing.Size(261, 23);
+            this.invertFusesLabel.TabIndex = 19;
+            this.invertFusesLabel.Text = "Invert Fuse bits(used by default):";
+            // 
+            // debugModeCheck
+            // 
+            this.debugModeCheck.AutoSize = true;
+            this.debugModeCheck.Checked = true;
+            this.debugModeCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.debugModeCheck.Location = new System.Drawing.Point(126, 10);
+            this.debugModeCheck.Name = "debugModeCheck";
+            this.debugModeCheck.Size = new System.Drawing.Size(18, 17);
+            this.debugModeCheck.TabIndex = 18;
+            this.debugModeCheck.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(6, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 23);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Debug mode:";
+            // 
             // INFO
             // 
+            this.INFO.Controls.Add(this.googlePlayIco);
+            this.INFO.Controls.Add(this.yotubeIco);
+            this.INFO.Controls.Add(this.vkIco);
+            this.INFO.Controls.Add(this.githubIco);
+            this.INFO.Controls.Add(this.instIco);
+            this.INFO.Controls.Add(this.infoTextBox);
+            this.INFO.Controls.Add(this.pictureBox7);
+            this.INFO.Controls.Add(this.AppsLightCompanyIco);
             this.INFO.ImageIndex = 3;
             this.INFO.Location = new System.Drawing.Point(104, 4);
-            this.INFO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.INFO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.INFO.Name = "INFO";
-            this.INFO.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.INFO.Size = new System.Drawing.Size(541, 403);
+            this.INFO.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.INFO.Size = new System.Drawing.Size(757, 498);
             this.INFO.TabIndex = 2;
             this.INFO.ToolTipText = "App Info";
             this.INFO.UseVisualStyleBackColor = true;
+            // 
+            // googlePlayIco
+            // 
+            this.googlePlayIco.Image = global::AvrFlasherTool.Properties.Resources.googlePlayIco;
+            this.googlePlayIco.Location = new System.Drawing.Point(325, 416);
+            this.googlePlayIco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.googlePlayIco.Name = "googlePlayIco";
+            this.googlePlayIco.Size = new System.Drawing.Size(60, 62);
+            this.googlePlayIco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.googlePlayIco.TabIndex = 11;
+            this.googlePlayIco.TabStop = false;
+            this.toolTipButtons.SetToolTip(this.googlePlayIco, "Go to page in Google Play!");
+            this.googlePlayIco.Click += new System.EventHandler(this.googlePlayIco_Click);
+            // 
+            // yotubeIco
+            // 
+            this.yotubeIco.Image = global::AvrFlasherTool.Properties.Resources.yotubeico;
+            this.yotubeIco.Location = new System.Drawing.Point(158, 416);
+            this.yotubeIco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.yotubeIco.Name = "yotubeIco";
+            this.yotubeIco.Size = new System.Drawing.Size(85, 62);
+            this.yotubeIco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.yotubeIco.TabIndex = 10;
+            this.yotubeIco.TabStop = false;
+            this.toolTipButtons.SetToolTip(this.yotubeIco, "Go to YouTube channel!");
+            this.yotubeIco.Click += new System.EventHandler(this.yotubeIco_Click);
+            // 
+            // vkIco
+            // 
+            this.vkIco.Image = global::AvrFlasherTool.Properties.Resources.vkIco;
+            this.vkIco.Location = new System.Drawing.Point(249, 416);
+            this.vkIco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vkIco.Name = "vkIco";
+            this.vkIco.Size = new System.Drawing.Size(70, 62);
+            this.vkIco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.vkIco.TabIndex = 9;
+            this.vkIco.TabStop = false;
+            this.toolTipButtons.SetToolTip(this.vkIco, "Go to VK account!");
+            this.vkIco.Click += new System.EventHandler(this.vkIco_Click);
+            // 
+            // githubIco
+            // 
+            this.githubIco.Image = global::AvrFlasherTool.Properties.Resources.githubIco;
+            this.githubIco.Location = new System.Drawing.Point(82, 416);
+            this.githubIco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.githubIco.Name = "githubIco";
+            this.githubIco.Size = new System.Drawing.Size(70, 62);
+            this.githubIco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.githubIco.TabIndex = 8;
+            this.githubIco.TabStop = false;
+            this.toolTipButtons.SetToolTip(this.githubIco, "Go to the project page!");
+            this.githubIco.Click += new System.EventHandler(this.githubIco_Click);
+            // 
+            // instIco
+            // 
+            this.instIco.Image = global::AvrFlasherTool.Properties.Resources.instIco;
+            this.instIco.Location = new System.Drawing.Point(6, 416);
+            this.instIco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.instIco.Name = "instIco";
+            this.instIco.Size = new System.Drawing.Size(70, 62);
+            this.instIco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.instIco.TabIndex = 7;
+            this.instIco.TabStop = false;
+            this.toolTipButtons.SetToolTip(this.instIco, "Go to Instagram account!");
+            this.instIco.Click += new System.EventHandler(this.instIco_Click);
+            // 
+            // infoTextBox
+            // 
+            this.infoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.infoTextBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.infoTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F);
+            this.infoTextBox.Location = new System.Drawing.Point(137, 7);
+            this.infoTextBox.Name = "infoTextBox";
+            this.infoTextBox.Size = new System.Drawing.Size(611, 404);
+            this.infoTextBox.TabIndex = 6;
+            this.infoTextBox.Text = resources.GetString("infoTextBox.Text");
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::AvrFlasherTool.Properties.Resources.progIco;
+            this.pictureBox7.Location = new System.Drawing.Point(6, 122);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(125, 116);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
+            // 
+            // AppsLightCompanyIco
+            // 
+            this.AppsLightCompanyIco.Image = global::AvrFlasherTool.Properties.Resources.splashScreen;
+            this.AppsLightCompanyIco.Location = new System.Drawing.Point(6, 6);
+            this.AppsLightCompanyIco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AppsLightCompanyIco.Name = "AppsLightCompanyIco";
+            this.AppsLightCompanyIco.Size = new System.Drawing.Size(125, 112);
+            this.AppsLightCompanyIco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AppsLightCompanyIco.TabIndex = 4;
+            this.AppsLightCompanyIco.TabStop = false;
             // 
             // icons
             // 
@@ -659,6 +1341,7 @@
             this.icons.Images.SetKeyName(6, "MCU info.png");
             this.icons.Images.SetKeyName(7, "MCU settings.png");
             this.icons.Images.SetKeyName(8, "Refresh.png");
+            this.icons.Images.SetKeyName(9, "MCU Auto.png");
             // 
             // openFileDialog1
             // 
@@ -675,267 +1358,16 @@
             // 
             this.deployAvrdude.DoWork += new System.ComponentModel.DoWorkEventHandler(this.deployAvrdude_DoWork);
             // 
-            // mcuSettingsIcon
-            // 
-            this.mcuSettingsIcon.Image = global::AvrFlasherTool.Properties.Resources.MCU_info;
-            this.mcuSettingsIcon.Location = new System.Drawing.Point(4, 17);
-            this.mcuSettingsIcon.Margin = new System.Windows.Forms.Padding(2);
-            this.mcuSettingsIcon.Name = "mcuSettingsIcon";
-            this.mcuSettingsIcon.Size = new System.Drawing.Size(64, 65);
-            this.mcuSettingsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.mcuSettingsIcon.TabIndex = 4;
-            this.mcuSettingsIcon.TabStop = false;
-            // 
-            // consoleFuseGroup
-            // 
-            this.consoleFuseGroup.Controls.Add(this.fuseReadButton);
-            this.consoleFuseGroup.Controls.Add(this.richTextBox1);
-            this.consoleFuseGroup.Controls.Add(this.fuseFlashButton);
-            this.consoleFuseGroup.Location = new System.Drawing.Point(4, 264);
-            this.consoleFuseGroup.Margin = new System.Windows.Forms.Padding(2);
-            this.consoleFuseGroup.Name = "consoleFuseGroup";
-            this.consoleFuseGroup.Padding = new System.Windows.Forms.Padding(2);
-            this.consoleFuseGroup.Size = new System.Drawing.Size(534, 128);
-            this.consoleFuseGroup.TabIndex = 7;
-            this.consoleFuseGroup.TabStop = false;
-            this.consoleFuseGroup.Text = "Console";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(4, 19);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(473, 105);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
-            // fuseFlashButton
-            // 
-            this.fuseFlashButton.BackColor = System.Drawing.Color.Transparent;
-            this.fuseFlashButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.MCU_Flash;
-            this.fuseFlashButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.fuseFlashButton.FlatAppearance.BorderSize = 0;
-            this.fuseFlashButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fuseFlashButton.ImageIndex = 5;
-            this.fuseFlashButton.Location = new System.Drawing.Point(481, 17);
-            this.fuseFlashButton.Margin = new System.Windows.Forms.Padding(2);
-            this.fuseFlashButton.Name = "fuseFlashButton";
-            this.fuseFlashButton.Size = new System.Drawing.Size(49, 53);
-            this.fuseFlashButton.TabIndex = 0;
-            this.fuseFlashButton.UseVisualStyleBackColor = false;
-            // 
-            // manualSettingsCheck
-            // 
-            this.manualSettingsCheck.AutoSize = true;
-            this.manualSettingsCheck.Location = new System.Drawing.Point(88, 1);
-            this.manualSettingsCheck.Name = "manualSettingsCheck";
-            this.manualSettingsCheck.Size = new System.Drawing.Size(15, 14);
-            this.manualSettingsCheck.TabIndex = 5;
-            this.manualSettingsCheck.UseVisualStyleBackColor = true;
-            this.manualSettingsCheck.CheckedChanged += new System.EventHandler(this.manualSettingsCheck_CheckedChanged);
-            // 
-            // autoSettingsGroup
-            // 
-            this.autoSettingsGroup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.autoSettingsGroup.Controls.Add(this.autoSettingsCheck);
-            this.autoSettingsGroup.Controls.Add(this.pictureBox3);
-            this.autoSettingsGroup.Location = new System.Drawing.Point(2, 76);
-            this.autoSettingsGroup.Margin = new System.Windows.Forms.Padding(2);
-            this.autoSettingsGroup.Name = "autoSettingsGroup";
-            this.autoSettingsGroup.Padding = new System.Windows.Forms.Padding(2);
-            this.autoSettingsGroup.Size = new System.Drawing.Size(534, 90);
-            this.autoSettingsGroup.TabIndex = 8;
-            this.autoSettingsGroup.TabStop = false;
-            this.autoSettingsGroup.Text = "Auto Settings";
-            // 
-            // autoSettingsCheck
-            // 
-            this.autoSettingsCheck.AutoSize = true;
-            this.autoSettingsCheck.Location = new System.Drawing.Point(76, 0);
-            this.autoSettingsCheck.Name = "autoSettingsCheck";
-            this.autoSettingsCheck.Size = new System.Drawing.Size(15, 14);
-            this.autoSettingsCheck.TabIndex = 5;
-            this.autoSettingsCheck.UseVisualStyleBackColor = true;
-            this.autoSettingsCheck.CheckedChanged += new System.EventHandler(this.autoSettingsCheck_CheckedChanged);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::AvrFlasherTool.Properties.Resources.MCU_settings;
-            this.pictureBox3.Location = new System.Drawing.Point(4, 17);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // fuseReadButton
-            // 
-            this.fuseReadButton.BackColor = System.Drawing.Color.Transparent;
-            this.fuseReadButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Read;
-            this.fuseReadButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.fuseReadButton.FlatAppearance.BorderSize = 0;
-            this.fuseReadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fuseReadButton.ImageIndex = 5;
-            this.fuseReadButton.Location = new System.Drawing.Point(481, 75);
-            this.fuseReadButton.Margin = new System.Windows.Forms.Padding(2);
-            this.fuseReadButton.Name = "fuseReadButton";
-            this.fuseReadButton.Size = new System.Drawing.Size(49, 53);
-            this.fuseReadButton.TabIndex = 6;
-            this.fuseReadButton.UseVisualStyleBackColor = false;
-            // 
-            // lowByteFuseLabel
-            // 
-            this.lowByteFuseLabel.AutoSize = true;
-            this.lowByteFuseLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lowByteFuseLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lowByteFuseLabel.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lowByteFuseLabel.Location = new System.Drawing.Point(0, -1);
-            this.lowByteFuseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lowByteFuseLabel.Name = "lowByteFuseLabel";
-            this.lowByteFuseLabel.Size = new System.Drawing.Size(24, 20);
-            this.lowByteFuseLabel.TabIndex = 8;
-            this.lowByteFuseLabel.Text = "0x";
-            this.toolTipButtons.SetToolTip(this.lowByteFuseLabel, "Enable extended logging");
-            // 
-            // lowByteText
-            // 
-            this.lowByteText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lowByteText.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lowByteText.Location = new System.Drawing.Point(19, -1);
-            this.lowByteText.Name = "lowByteText";
-            this.lowByteText.Size = new System.Drawing.Size(24, 20);
-            this.lowByteText.TabIndex = 9;
-            // 
-            // lowByteLabel
-            // 
-            this.lowByteLabel.AutoSize = true;
-            this.lowByteLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lowByteLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lowByteLabel.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lowByteLabel.Location = new System.Drawing.Point(72, 18);
-            this.lowByteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lowByteLabel.Name = "lowByteLabel";
-            this.lowByteLabel.Size = new System.Drawing.Size(74, 20);
-            this.lowByteLabel.TabIndex = 10;
-            this.lowByteLabel.Text = "Low Byte:";
-            this.toolTipButtons.SetToolTip(this.lowByteLabel, "Enable extended logging");
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.lowByteText);
-            this.panel1.Controls.Add(this.lowByteFuseLabel);
-            this.panel1.Location = new System.Drawing.Point(76, 41);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(44, 20);
-            this.panel1.TabIndex = 11;
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.highByteText);
-            this.panel2.Controls.Add(this.highLabelFuseLabel);
-            this.panel2.Location = new System.Drawing.Point(165, 41);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 20);
-            this.panel2.TabIndex = 12;
-            // 
-            // highByteText
-            // 
-            this.highByteText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.highByteText.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.highByteText.Location = new System.Drawing.Point(19, -1);
-            this.highByteText.Name = "highByteText";
-            this.highByteText.Size = new System.Drawing.Size(24, 20);
-            this.highByteText.TabIndex = 9;
-            // 
-            // highLabelFuseLabel
-            // 
-            this.highLabelFuseLabel.AutoSize = true;
-            this.highLabelFuseLabel.BackColor = System.Drawing.Color.Transparent;
-            this.highLabelFuseLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.highLabelFuseLabel.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.highLabelFuseLabel.Location = new System.Drawing.Point(0, -1);
-            this.highLabelFuseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.highLabelFuseLabel.Name = "highLabelFuseLabel";
-            this.highLabelFuseLabel.Size = new System.Drawing.Size(24, 20);
-            this.highLabelFuseLabel.TabIndex = 8;
-            this.highLabelFuseLabel.Text = "0x";
-            this.toolTipButtons.SetToolTip(this.highLabelFuseLabel, "Enable extended logging");
-            // 
-            // highByteLabel
-            // 
-            this.highByteLabel.AutoSize = true;
-            this.highByteLabel.BackColor = System.Drawing.Color.Transparent;
-            this.highByteLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.highByteLabel.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.highByteLabel.Location = new System.Drawing.Point(161, 18);
-            this.highByteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.highByteLabel.Name = "highByteLabel";
-            this.highByteLabel.Size = new System.Drawing.Size(80, 20);
-            this.highByteLabel.TabIndex = 13;
-            this.highByteLabel.Text = "High Byte:";
-            this.toolTipButtons.SetToolTip(this.highByteLabel, "Enable extended logging");
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.extByteText);
-            this.panel3.Controls.Add(this.extByteFuseLabel);
-            this.panel3.Location = new System.Drawing.Point(257, 41);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(44, 20);
-            this.panel3.TabIndex = 14;
-            // 
-            // extByteText
-            // 
-            this.extByteText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.extByteText.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.extByteText.Location = new System.Drawing.Point(19, -1);
-            this.extByteText.Name = "extByteText";
-            this.extByteText.Size = new System.Drawing.Size(24, 20);
-            this.extByteText.TabIndex = 9;
-            // 
-            // extByteFuseLabel
-            // 
-            this.extByteFuseLabel.AutoSize = true;
-            this.extByteFuseLabel.BackColor = System.Drawing.Color.Transparent;
-            this.extByteFuseLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.extByteFuseLabel.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.extByteFuseLabel.Location = new System.Drawing.Point(0, -1);
-            this.extByteFuseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.extByteFuseLabel.Name = "extByteFuseLabel";
-            this.extByteFuseLabel.Size = new System.Drawing.Size(24, 20);
-            this.extByteFuseLabel.TabIndex = 8;
-            this.extByteFuseLabel.Text = "0x";
-            this.toolTipButtons.SetToolTip(this.extByteFuseLabel, "Enable extended logging");
-            // 
-            // extByteLabel
-            // 
-            this.extByteLabel.AutoSize = true;
-            this.extByteLabel.BackColor = System.Drawing.Color.Transparent;
-            this.extByteLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.extByteLabel.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.extByteLabel.Location = new System.Drawing.Point(258, 18);
-            this.extByteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.extByteLabel.Name = "extByteLabel";
-            this.extByteLabel.Size = new System.Drawing.Size(68, 20);
-            this.extByteLabel.TabIndex = 15;
-            this.extByteLabel.Text = "Ext Byte:";
-            this.toolTipButtons.SetToolTip(this.extByteLabel, "Enable extended logging");
-            // 
             // Form1
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 399);
+            this.ClientSize = new System.Drawing.Size(861, 491);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -956,17 +1388,27 @@
             this.FUSES.ResumeLayout(false);
             this.manualSettingsGroup.ResumeLayout(false);
             this.manualSettingsGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mcuSettingsIcon)).EndInit();
-            this.consoleFuseGroup.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.groupBox4.ResumeLayout(false);
             this.autoSettingsGroup.ResumeLayout(false);
             this.autoSettingsGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.SETTINGS.ResumeLayout(false);
+            this.SETTINGS.PerformLayout();
+            this.INFO.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.googlePlayIco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yotubeIco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vkIco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.githubIco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.instIco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AppsLightCompanyIco)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -994,7 +1436,6 @@
         private System.Windows.Forms.Button RefreshPortsButton;
         private System.Windows.Forms.RichTextBox ConsoleTextBox;
         private System.Windows.Forms.TabPage FUSES;
-        private System.Windows.Forms.GroupBox manualSettingsGroup;
         private System.Windows.Forms.GroupBox filesSelectGroup;
         private System.Windows.Forms.Button Search;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -1015,27 +1456,55 @@
         private System.Windows.Forms.CheckBox checkForceBox;
         private System.Windows.Forms.CheckBox checkEraseBox;
         private System.Windows.Forms.Label eraseChipLabel;
-        private System.Windows.Forms.GroupBox consoleFuseGroup;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button fuseFlashButton;
-        private System.Windows.Forms.PictureBox mcuSettingsIcon;
+        private System.Windows.Forms.GroupBox manualSettingsGroup;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox ExByteText;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox HighByteText;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox LowByteText;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button readFuseSettings;
+        private System.Windows.Forms.RichTextBox ConsoleFuseTextBox;
+        private System.Windows.Forms.Button flashFuseButton;
         private System.Windows.Forms.GroupBox autoSettingsGroup;
-        private System.Windows.Forms.CheckBox autoSettingsCheck;
+        private System.Windows.Forms.Label bodLvlLabel;
+        private System.Windows.Forms.Label freqLabel;
+        private System.Windows.Forms.ComboBox bodLevelBox;
+        private System.Windows.Forms.ComboBox freqComboBox;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.CheckBox manualSettingsCheck;
-        private System.Windows.Forms.Button fuseReadButton;
-        private System.Windows.Forms.Label lowByteLabel;
-        private System.Windows.Forms.TextBox lowByteText;
-        private System.Windows.Forms.Label lowByteFuseLabel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label highByteLabel;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox highByteText;
-        private System.Windows.Forms.Label highLabelFuseLabel;
-        private System.Windows.Forms.Label extByteLabel;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox extByteText;
-        private System.Windows.Forms.Label extByteFuseLabel;
+        private System.Windows.Forms.ComboBox bootSizeBox;
+        private System.Windows.Forms.Label bootSizeLabel;
+        private System.Windows.Forms.CheckBox bootCheck;
+        private System.Windows.Forms.CheckBox bodenCheck;
+        private System.Windows.Forms.CheckBox resetIOCheck;
+        private System.Windows.Forms.Label watchdogTimerLabel;
+        private System.Windows.Forms.Label spiEnableLabel;
+        private System.Windows.Forms.CheckBox eesaveCheck;
+        private System.Windows.Forms.CheckBox spiCheck;
+        private System.Windows.Forms.CheckBox wdCheck;
+        private System.Windows.Forms.Label eesaveEnableLabel;
+        public System.Windows.Forms.CheckBox autoSettingsCheck;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox AppsLightCompanyIco;
+        private System.Windows.Forms.RichTextBox infoTextBox;
+        private System.Windows.Forms.PictureBox googlePlayIco;
+        private System.Windows.Forms.PictureBox yotubeIco;
+        private System.Windows.Forms.PictureBox vkIco;
+        private System.Windows.Forms.PictureBox githubIco;
+        private System.Windows.Forms.PictureBox instIco;
+        private System.Windows.Forms.CheckBox debugModeCheck;
+        private System.Windows.Forms.CheckBox invertFusesCheck;
+        private System.Windows.Forms.Label invertFusesLabel;
     }
 }
 

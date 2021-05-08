@@ -117,15 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="icons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MCU.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MCU.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="FUSES.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SETTINGS.ImageIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="INFO.ImageIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="icons.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADK
-        kgAAAk1TRnQBSQFMAgEBCgEAAWABAQFgAQEBWgEAAVoBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        kgAAAk1TRnQBSQFMAgEBCgEAAQwBAQEQAQEBWgEAAVoBAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABaAEBAgABDgEBAgABAQEAAQgFAAGwAXsBARcAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPA
         AQABwAHcAcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANN
         AQADQgEAAzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGt
@@ -751,13 +765,199 @@
         AQABHwj/AeABAAEPBP8DAA7/AfgBAgEBAQABQAEfB/8BgAEAAR8I/wHwAQABHwT/AwAO/wH4AQIBAQEA
         AUABHwf/AYABAAEfCP8B/AEAAX8E/wMADv8B+AECAQEBAAFAAR8H/wHAAQABPw//AwAO/wH4AQIBAQEA
         AUABHxn/AwAO/wH4AQYBAQEAAWABHxn/AwAO/wH8AQYBAQGAAeABPxn/AwAO/wH8AR8BhwHhAfgBfxn/
-        AwAt/wMALf8DAC3/AwAt/wMALf8DAAs=
+        AwAt/wMALf8DAC3/AwAt/wMALf8ZAAs=
 </value>
   </data>
-  <metadata name="toolTipButtons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>394, 15</value>
-  </metadata>
+  <data name="filesSelectGroup.Text" xml:space="preserve">
+    <value>Файлы</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="SaveSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 52</value>
+  </data>
+  <data name="SaveSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>483, 24</value>
+  </data>
+  <data name="fileSaveLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <data name="fileSaveLabel.Text" xml:space="preserve">
+    <value>Сохранить:</value>
+  </data>
+  <data name="FileSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 21</value>
+  </data>
+  <data name="FileSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>513, 24</value>
+  </data>
+  <data name="fileWriteLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 23</value>
+  </data>
+  <data name="fileWriteLabel.Text" xml:space="preserve">
+    <value>Запись:</value>
+  </data>
+  <data name="consoleGroup.Text" xml:space="preserve">
+    <value>Консоль</value>
+  </data>
+  <data name="programmerSelectGroup.Text" xml:space="preserve">
+    <value>Программатор</value>
+  </data>
+  <data name="portProgLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 23</value>
+  </data>
+  <data name="portProgLabel.Text" xml:space="preserve">
+    <value>Порт:</value>
+  </data>
+  <data name="typeProgLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 23</value>
+  </data>
+  <data name="typeProgLabel.Text" xml:space="preserve">
+    <value>Тип:</value>
+  </data>
+  <data name="mcuSelectGroup.Text" xml:space="preserve">
+    <value>Микроконтроллер</value>
+  </data>
+  <data name="eraseChipLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 56</value>
+  </data>
+  <data name="eraseChipLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 23</value>
+  </data>
+  <data name="eraseChipLabel.Text" xml:space="preserve">
+    <value>Стирать чип(рекомендуется):</value>
+  </data>
+  <data name="checkForceBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 61</value>
+  </data>
+  <data name="forceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 55</value>
+  </data>
+  <data name="forceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
+  </data>
+  <data name="forceLabel.Text" xml:space="preserve">
+    <value>Игнор  (-F):</value>
+  </data>
+  <data name="checkVerboseBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 61</value>
+  </data>
+  <data name="verboseLogging.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="verboseLogging.Text" xml:space="preserve">
+    <value>Логирование (-v):</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 23</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>МК:</value>
+  </data>
+  <data name="manualSettingsGroup.Text" xml:space="preserve">
+    <value>Ручные настройки:</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 22</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 25</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Расширенный байт:</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 51</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 22</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 25</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Верхний байт:</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 51</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 25</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Нижний байт:</value>
+  </data>
+  <data name="manualSettingsCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 0</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Консоль</value>
+  </data>
+  <data name="autoSettingsGroup.Text" xml:space="preserve">
+    <value>Авто настройки(бета!)</value>
+  </data>
+  <data name="eesaveEnableLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 23</value>
+  </data>
+  <data name="eesaveEnableLabel.Text" xml:space="preserve">
+    <value>Созранять содержимое EEPROM при стирании чипа[EESAVE = 0]</value>
+  </data>
+  <data name="spiEnableLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 23</value>
+  </data>
+  <data name="spiEnableLabel.Text" xml:space="preserve">
+    <value>Включить внутрисхемное программирование(SPI) [SPIEN = 1]</value>
+  </data>
+  <data name="watchdogTimerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 23</value>
+  </data>
+  <data name="watchdogTimerLabel.Text" xml:space="preserve">
+    <value>Включение таймера [WDTON = 1]</value>
+  </data>
+  <data name="bootSizeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 91</value>
+  </data>
+  <data name="bootSizeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>417, 24</value>
+  </data>
+  <data name="bootSizeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 23</value>
+  </data>
+  <data name="bootSizeLabel.Text" xml:space="preserve">
+    <value>Загрузчик:</value>
+  </data>
+  <data name="bodLvlLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="bodLvlLabel.Text" xml:space="preserve">
+    <value>Уровень БОД:</value>
+  </data>
+  <data name="freqLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
+  </data>
+  <data name="freqLabel.Text" xml:space="preserve">
+    <value>Частота:</value>
+  </data>
+  <data name="invertFusesCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 49</value>
+  </data>
+  <data name="invertFusesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 23</value>
+  </data>
+  <data name="invertFusesLabel.Text" xml:space="preserve">
+    <value>Инвертировать биты фьюзов(используется по умолчанию):</value>
+  </data>
+  <data name="debugModeCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 7</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 23</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Режим отладки(для разработчиков):</value>
+  </data>
+  <data name="infoTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS Reference Sans Serif, 12pt</value>
+  </data>
   <data name="RefreshPortsButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADEAAAArCAYAAADR0WDhAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -777,22 +977,6 @@
         nkBqX/YpV/WHTCvW2IOCo1Hp8gobn4APF/8Ar41tEOcXrAsAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="toolTipButtons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>394, 15</value>
-  </metadata>
-  <data name="infoTextBox.Text" xml:space="preserve">
-    <value>Данное приложение было создано для конкурса компьютерного творчества «UPgrade» от ЦДО «Интеллект» студентом первого курса СПО ИКТЗИ «КИТ» группы 4143 Хузякаевым Вадимом(TTLC198).
-Оно предназначено для прошивки микроконтроллеров серии AVR. В приложении реализованы такие нововведения, с которыми я никогда не сталкивался в других проектах и которые заметно облегчают взаимодействие с МК. Одними из самых необходимых и удобных функций для новичков являются: чтение и запись в FLASH и EEPROM память, чтение и запись фьюзов и установочных битов, ну и конечно же встроенный калькулятор настроек МК, позволяющий даже самому отдаленному, было понятно, как настраивать микроконтроллеры серии AVR.</value>
-  </data>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>237, 17</value>
-  </metadata>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>95, 19</value>
-  </metadata>
-  <metadata name="deployAvrdude.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>551, 17</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIADdFgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgEAAAA9ntg7QAAFqRJ

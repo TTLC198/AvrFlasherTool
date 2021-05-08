@@ -117,15 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="icons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RefreshPortsButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADEAAAArCAYAAADR0WDhAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAxlJREFUaEPNmbtxGzEURVWCOpBKUAEOFDtS7sSBC1AJypwyNDNFjl2C3IFKUObA
+        ge1xLvqeHWBnCV0sPsRyHBwO+Ra47+HzACx4cTgcTma/31+LW/GQgWfXru4IrLEGBXUnHsWLOFRCWerc
+        Os1erDGHnF8KerYl8BxofHR+WrFGBw7F7xDASGjMnfNZizUukQN6/yk43BKm2aWLoYQ1RiR6I7bo/RzP
+        onkBsEaQ2LkbEMHnjYsphzUiEsSckxzM7W8iXV6xtS4E+K4ekTcGKgcRJ55CuZ0o9pzKoEujarWZWlU5
+        8sYQKjvRFAJqTkTqhLpOM2XnNFKOfqhSjThTo2nOOtAIWs7Hknlj1Hc22FiHEX3AvhStmUbVQ1wDWkHT
+        +Yo8h7I0wD3fLQVZp12hyOgGcJ6Cq6DtfEY+iGwHR0F6xBYIIHDyFAJ0gt5S/0vyO+Wnsc1E4fv0QcJ9
+        GkwP0qGzcj3augzPRPG14XxJg+lFWrl5HXk1thK72DvuYWTIKIC0OEQ6H71MSY8wyeUKREYmMyug89HL
+        lKcIr+0NT2kgpyJNdnjnq5Vpj4BSI+aCI5EuuVHak9aYplEEQQ5oriBs0giQNlOr5z3ljzg6HCK2JjT0
+        XdghHyzvLaPyNdUojcSQd+AS8sMGWNq14Zerj8DZcyKH/K11KHvIO1ev1IhHV2lL5PO9+LuIIfLZlQcq
+        re0Tw3brFuSXDfj7Io4frlwkVlgGnjLk4NeDfH8SJP2Vex6ZPlRoLanOPqVamT4UaOkUu9k96gimD4JM
+        gk4ZfvwYyfxFgZbe7M663LYwf1GQNSfMs2x+rRz9UJA1tx3/3Ygc/VCALLc12z/nre5kV11OscPeU94Y
+        JN5yhUkeVTdGZQk+HjjxcdKVfsQaJV5620th9JiKBBmvYiIs3zQ21zHdV/oRawQJb/WnioObju5jvzVG
+        JNxzO34KXXlmjUskTLKvHZFHwHTsPqNZo0NOmO/dF1wZGOWTl2xrXENOyZWaZXgNOoOEH7LMWmMNCoAd
+        nkBqX/YpV/WHTCvW2IOCo1Hp8gobn4APF/8Ar41tEOcXrAsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="infoTextBox.Text" xml:space="preserve">
+    <value>This application was created for the competition of computer creativity "UPgrade" from the CDO "Intellect" by a first-year student of the SPO ICTZI "KIT" group 4143 Huzyakaev Vadim (TTLC198).
+It is intended for flashing AVR microcontrollers. The application implements such innovations that I have never encountered in other projects and which greatly facilitate interaction with MK. Some of the most necessary and convenient functions for beginners are: reading and writing to FLASH and EEPROM memory, reading and writing fuses and setting bits, and of course the built-in MK settings calculator, allowing even the most remote, it was clear how to configure AVR series microcontrollers .
+
+</value>
+  </data>
   <data name="icons.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADK
-        kgAAAk1TRnQBSQFMAgEBCgEAAWABAQFgAQEBWgEAAVoBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        kgAAAk1TRnQBSQFMAgEBCgEAAQgBAQEIAQEBWgEAAVoBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABaAEBAgABDgEBAgABAQEAAQgFAAGwAXsBARcAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPA
         AQABwAHcAcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANN
         AQADQgEAAzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGt
@@ -754,45 +777,6 @@
         AwAt/wMALf8DAC3/AwAt/wMALf8DAAs=
 </value>
   </data>
-  <metadata name="toolTipButtons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>394, 15</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="RefreshPortsButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADEAAAArCAYAAADR0WDhAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAxlJREFUaEPNmbtxGzEURVWCOpBKUAEOFDtS7sSBC1AJypwyNDNFjl2C3IFKUObA
-        ge1xLvqeHWBnCV0sPsRyHBwO+Ra47+HzACx4cTgcTma/31+LW/GQgWfXru4IrLEGBXUnHsWLOFRCWerc
-        Os1erDGHnF8KerYl8BxofHR+WrFGBw7F7xDASGjMnfNZizUukQN6/yk43BKm2aWLoYQ1RiR6I7bo/RzP
-        onkBsEaQ2LkbEMHnjYsphzUiEsSckxzM7W8iXV6xtS4E+K4ekTcGKgcRJ55CuZ0o9pzKoEujarWZWlU5
-        8sYQKjvRFAJqTkTqhLpOM2XnNFKOfqhSjThTo2nOOtAIWs7Hknlj1Hc22FiHEX3AvhStmUbVQ1wDWkHT
-        +Yo8h7I0wD3fLQVZp12hyOgGcJ6Cq6DtfEY+iGwHR0F6xBYIIHDyFAJ0gt5S/0vyO+Wnsc1E4fv0QcJ9
-        GkwP0qGzcj3augzPRPG14XxJg+lFWrl5HXk1thK72DvuYWTIKIC0OEQ6H71MSY8wyeUKREYmMyug89HL
-        lKcIr+0NT2kgpyJNdnjnq5Vpj4BSI+aCI5EuuVHak9aYplEEQQ5oriBs0giQNlOr5z3ljzg6HCK2JjT0
-        XdghHyzvLaPyNdUojcSQd+AS8sMGWNq14Zerj8DZcyKH/K11KHvIO1ev1IhHV2lL5PO9+LuIIfLZlQcq
-        re0Tw3brFuSXDfj7Io4frlwkVlgGnjLk4NeDfH8SJP2Vex6ZPlRoLanOPqVamT4UaOkUu9k96gimD4JM
-        gk4ZfvwYyfxFgZbe7M663LYwf1GQNSfMs2x+rRz9UJA1tx3/3Ygc/VCALLc12z/nre5kV11OscPeU94Y
-        JN5yhUkeVTdGZQk+HjjxcdKVfsQaJV5620th9JiKBBmvYiIs3zQ21zHdV/oRawQJb/WnioObju5jvzVG
-        JNxzO34KXXlmjUskTLKvHZFHwHTsPqNZo0NOmO/dF1wZGOWTl2xrXENOyZWaZXgNOoOEH7LMWmMNCoAd
-        nkBqX/YpV/WHTCvW2IOCo1Hp8gobn4APF/8Ar41tEOcXrAsAAAAASUVORK5CYII=
-</value>
-  </data>
-  <metadata name="toolTipButtons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>394, 15</value>
-  </metadata>
-  <data name="infoTextBox.Text" xml:space="preserve">
-    <value>Данное приложение было создано для конкурса компьютерного творчества «UPgrade» от ЦДО «Интеллект» студентом первого курса СПО ИКТЗИ «КИТ» группы 4143 Хузякаевым Вадимом(TTLC198).
-Оно предназначено для прошивки микроконтроллеров серии AVR. В приложении реализованы такие нововведения, с которыми я никогда не сталкивался в других проектах и которые заметно облегчают взаимодействие с МК. Одними из самых необходимых и удобных функций для новичков являются: чтение и запись в FLASH и EEPROM память, чтение и запись фьюзов и установочных битов, ну и конечно же встроенный калькулятор настроек МК, позволяющий даже самому отдаленному, было понятно, как настраивать микроконтроллеры серии AVR.</value>
-  </data>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>237, 17</value>
-  </metadata>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>95, 19</value>
-  </metadata>
-  <metadata name="deployAvrdude.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>551, 17</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIADdFgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgEAAAA9ntg7QAAFqRJ
