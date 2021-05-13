@@ -16,6 +16,8 @@ namespace AvrFlasherTool
     {
         String dudeLocation = "avrdude.exe";
         String confLocation = "avrdude.conf";
+        String chipsLocation = "cfg\\chips.txt";
+        String progLocation = "cfg\\programmers.txt";
         string[] chips = new String[100];
         string[] programmers = new string[100];
 
@@ -43,11 +45,16 @@ namespace AvrFlasherTool
             bootSizeBox.SelectedIndex = 0;
             freqComboBox.SelectedIndex = 0;
 
+            avrdudeBox.Text = Path.Combine(Application.StartupPath, "avrdude.exe");
+            confBox.Text = Path.Combine(Application.StartupPath, "avrdude.conf");
+            chipsBox.Text = Path.Combine(Application.StartupPath, "cfg", "chips.txt");
+            progsBox.Text = Path.Combine(Application.StartupPath, "cfg", "programmers.txt");
+
             manualSettingsGroup.Enabled = false;
 
             try
             {
-                using (StreamReader sr = new StreamReader("cfg\\chips.txt"))
+                using (StreamReader sr = new StreamReader(chipsLocation))
                 {
                     String[] chipData;
                     for (int i = 0; (line = sr.ReadLine()) != null; i++)
@@ -58,7 +65,7 @@ namespace AvrFlasherTool
                     }
                 }
 
-                using (StreamReader sr = new StreamReader("cfg\\programmers.txt"))
+                using (StreamReader sr = new StreamReader(progLocation))
                 {
                     String[] programmerData;
                     for (int i = 0; (line = sr.ReadLine()) != null; i++)
@@ -140,7 +147,22 @@ namespace AvrFlasherTool
 
         private void FinishedProcess(string dataReceived)
         {
-            if (tabControl1.SelectedIndex == 1)
+            if (tabControl1.SelectedIndex == 0)
+            {
+                if (dataReceived != "")
+                {
+                    if (dataReceived.Contains("error"))
+                        dataReceived = dataReceived.Substring(dataReceived.IndexOf("error"));
+                    else
+                        dataReceived = dataReceived.Substring(dataReceived.IndexOf("avrdude.exe"));
+                    ConsoleTextBox.Text += dataReceived;
+
+                    ConsoleTextBox.SelectionStart = ConsoleTextBox.Text.Length;
+                    ConsoleTextBox.ScrollToCaret();
+                    ConsoleTextBox.Cursor = Cursors.IBeam;
+                }
+            }
+            else if (tabControl1.SelectedIndex == 1)
             {
                 if (dataReceived != "")
                 {
@@ -156,21 +178,6 @@ namespace AvrFlasherTool
                     ConsoleFuseTextBox.SelectionStart = ConsoleTextBox.Text.Length;
                     ConsoleFuseTextBox.ScrollToCaret();
                     ConsoleFuseTextBox.Cursor = Cursors.IBeam;
-                }
-            }
-            else if (tabControl1.SelectedIndex == 0)
-            {
-                if (dataReceived != "")
-                {
-                    if (dataReceived.Contains("error"))
-                        dataReceived = dataReceived.Substring(dataReceived.IndexOf("error"));
-                    else
-                        dataReceived = dataReceived.Substring(dataReceived.IndexOf("avrdude.exe"));
-                    ConsoleTextBox.Text += dataReceived;
-
-                    ConsoleTextBox.SelectionStart = ConsoleTextBox.Text.Length;
-                    ConsoleTextBox.ScrollToCaret();
-                    ConsoleTextBox.Cursor = Cursors.IBeam;
                 }
             }
 
@@ -314,7 +321,7 @@ namespace AvrFlasherTool
 
             if (debugModeCheck.Checked)
             {
-                ConsoleFuseTextBox.Text += "High byte Fuses:";
+                ConsoleFuseTextBox.Text = "High byte Fuses:";
                 ConsoleFuseTextBox.Text += "\n";
                 ConsoleFuseTextBox.Text += "CKSEL =" + freqComboBox.Text.Substring(freqComboBox.Text.IndexOf("CKSEL =") + 8, 5); //CKSEL = 0001 SUT = 10
                 ConsoleFuseTextBox.Text += "\n";
@@ -440,42 +447,152 @@ namespace AvrFlasherTool
 
         private void FileSelect_MouseDown(object sender, MouseEventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
                 return;
             // получаем выбранный файл
-            openFileDialog1.Multiselect = false;
-            FileSelect.Text = openFileDialog1.FileName;
+            openFileDialog.Multiselect = false;
+            openFileDialog.Title = "Open Firmware files...";
+            openFileDialog.FileName = "*.hex";
+            openFileDialog.Filter = "Firmware files(*.hex)|*.hex|All files(*.*)|*.*";
+            FileSelect.Text = openFileDialog.FileName;
         }
 
         private void SearchWriteFileButton_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
                 return;
             // получаем выбранный файл
-            openFileDialog1.Multiselect = false;
-            FileSelect.Text = openFileDialog1.FileName;
+            openFileDialog.Title = "Open Firmware files...";
+            openFileDialog.FileName = "*.hex";
+            openFileDialog.Filter = "Firmware files(*.hex)|*.hex|All files(*.*)|*.*";
+            openFileDialog.Multiselect = false;
+            FileSelect.Text = openFileDialog.FileName;
         }
 
         private void SaveSelect_MouseDown(object sender, MouseEventArgs e)
         {
-            if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
+            if (saveFileDialog.ShowDialog() == DialogResult.Cancel)
                 return;
             // получаем выбранный файл
-            SaveSelect.Text = saveFileDialog1.FileName;
+            SaveSelect.Text = saveFileDialog.FileName;
         }
 
         private void SearchReadFileButton_Click(object sender, EventArgs e)
         {
-            if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
+            if (saveFileDialog.ShowDialog() == DialogResult.Cancel)
                 return;
             // получаем выбранный файл
-            SaveSelect.Text = saveFileDialog1.FileName;
+            SaveSelect.Text = saveFileDialog.FileName;
         }
+        private void avrdudeSearchButton_Click(object sender, EventArgs e)
+        {
+            //openFileDialog.InitialDirectory = Path.Combine(Path.GetDirectoryName(Directory.GetCurrentDirectory()), "cfg");
+            openFileDialog.InitialDirectory = Application.StartupPath;
+            openFileDialog.Multiselect = false;
+            openFileDialog.Title = "Open avrdude.exe...";
+            openFileDialog.FileName = "avrdude.exe";
+            openFileDialog.Filter = "Avrdude exe file(*.exe)|*.exe";
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            // получаем выбранный файл
+            avrdudeBox.Text = openFileDialog.FileName;
+            dudeLocation = openFileDialog.FileName;
+        }
+        private void confSearchButton_Click(object sender, EventArgs e)
+        {
+
+            openFileDialog.Title = "Open avrdude.conf...";
+            openFileDialog.FileName = "avrdude.conf";
+            openFileDialog.Filter = "Config files(*.conf)|*.conf";
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            // получаем выбранный файл
+            confBox.Text = openFileDialog.FileName;
+            confLocation = openFileDialog.FileName;
+        }
+        private void chipsSearchButton_Click(object sender, EventArgs e)
+        {
+            openFileDialog.InitialDirectory = Path.Combine(Application.StartupPath, "cfg");
+            openFileDialog.Title = "Open Chips config file...";
+            openFileDialog.FileName = "chips.txt";
+            openFileDialog.Filter = "Text files(*.txt)|*.text|All files(*.*)|*.*";
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            // получаем выбранный файл
+            chipsBox.Text = openFileDialog.FileName;
+            chipsLocation = openFileDialog.FileName;
+        }
+        private void progsSearchButton_Click(object sender, EventArgs e)
+        {
+            openFileDialog.InitialDirectory = Path.Combine(Application.StartupPath, "cfg");
+            openFileDialog.Title = "Open Prog config file...";
+            openFileDialog.FileName = "programmers.txt";
+            openFileDialog.Filter = "Text files(*.txt)|*.text|All files(*.*)|*.*";
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            // получаем выбранный файл
+            progsBox.Text = openFileDialog.FileName;
+            progLocation = openFileDialog.FileName;
+        }
+        private void avrdudeBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            openFileDialog.InitialDirectory = Application.StartupPath;
+            openFileDialog.Multiselect = false;
+            openFileDialog.Title = "Open avrdude.exe...";
+            openFileDialog.FileName = "avrdude.exe";
+            openFileDialog.Filter = "Avrdude exe file(*.exe)|*.exe";
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            // получаем выбранный файл
+            avrdudeBox.Text = openFileDialog.FileName;
+            dudeLocation = openFileDialog.FileName;
+        }
+        private void confBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            openFileDialog.Title = "Open avrdude.conf...";
+            openFileDialog.FileName = "avrdude.conf";
+            openFileDialog.Filter = "Config files(*.conf)|*.conf";
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            // получаем выбранный файл
+            confBox.Text = openFileDialog.FileName;
+            confLocation = openFileDialog.FileName;
+        }
+        private void chipsBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            openFileDialog.InitialDirectory = Path.Combine(Application.StartupPath, "cfg");
+            openFileDialog.Title = "Open Chips config file...";
+            openFileDialog.FileName = "chips.txt";
+            openFileDialog.Filter = "Text files(*.txt)|*.text|All files(*.*)|*.*";
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            // получаем выбранный файл
+            chipsBox.Text = openFileDialog.FileName;
+            chipsLocation = openFileDialog.FileName;
+        }
+        private void progsBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            openFileDialog.InitialDirectory = Path.Combine(Application.StartupPath, "cfg");
+            openFileDialog.Title = "Open Prog config file...";
+            openFileDialog.FileName = "programmers.txt";
+            openFileDialog.Filter = "Text files(*.txt)|*.text|All files(*.*)|*.*";
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() == DialogResult.Cancel)
+                return;
+            // получаем выбранный файл
+            progsBox.Text = openFileDialog.FileName;
+            progLocation = openFileDialog.FileName;
+        }
+
         private void checkPortBox_CheckedChanged(object sender, EventArgs e)
         {
             PortSelect.Enabled = checkPortBox.Checked;
         }
-
         private void autoSettingsCheck_CheckedChanged(object sender, EventArgs e)
         {
             if (autoSettingsCheck.Checked)

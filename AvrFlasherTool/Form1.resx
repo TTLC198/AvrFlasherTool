@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADK
-        kgAAAk1TRnQBSQFMAgEBCgEAAWABAQFgAQEBWgEAAVoBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        kgAAAk1TRnQBSQFMAgEBCgEAAWgBAQFoAQEBWgEAAVoBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABaAEBAgABDgEBAgABAQEAAQgFAAGwAXsBARcAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPA
         AQABwAHcAcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANN
         AQADQgEAAzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGt
@@ -784,10 +784,10 @@
     <value>Данное приложение было создано для конкурса компьютерного творчества «UPgrade» от ЦДО «Интеллект» студентом первого курса СПО ИКТЗИ «КИТ» группы 4143 Хузякаевым Вадимом(TTLC198).
 Оно предназначено для прошивки микроконтроллеров серии AVR. В приложении реализованы такие нововведения, с которыми я никогда не сталкивался в других проектах и которые заметно облегчают взаимодействие с МК. Одними из самых необходимых и удобных функций для новичков являются: чтение и запись в FLASH и EEPROM память, чтение и запись фьюзов и установочных битов, ну и конечно же встроенный калькулятор настроек МК, позволяющий даже самому отдаленному, было понятно, как настраивать микроконтроллеры серии AVR.</value>
   </data>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>237, 17</value>
   </metadata>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="saveFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>95, 19</value>
   </metadata>
   <metadata name="deployAvrdude.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
