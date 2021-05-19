@@ -102,10 +102,27 @@
             this.freqComboBox = new System.Windows.Forms.ComboBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.SETTINGS = new System.Windows.Forms.TabPage();
-            this.invertFusesCheck = new System.Windows.Forms.CheckBox();
-            this.invertFusesLabel = new System.Windows.Forms.Label();
-            this.debugModeCheck = new System.Windows.Forms.CheckBox();
+            this.generalSettingsGroup = new System.Windows.Forms.GroupBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.invertFusesCheck = new System.Windows.Forms.CheckBox();
+            this.debugModeCheck = new System.Windows.Forms.CheckBox();
+            this.invertFusesLabel = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.progsSearchButton = new System.Windows.Forms.Button();
+            this.progsBox = new System.Windows.Forms.ComboBox();
+            this.progsLabel = new System.Windows.Forms.Label();
+            this.chipsSearchButton = new System.Windows.Forms.Button();
+            this.chipsBox = new System.Windows.Forms.ComboBox();
+            this.chipsLabel = new System.Windows.Forms.Label();
+            this.confSearchButton = new System.Windows.Forms.Button();
+            this.avrdudeSearchButton = new System.Windows.Forms.Button();
+            this.confBox = new System.Windows.Forms.ComboBox();
+            this.confLabel = new System.Windows.Forms.Label();
+            this.avrdudeBox = new System.Windows.Forms.ComboBox();
+            this.avrdudeLabel = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.INFO = new System.Windows.Forms.TabPage();
             this.googlePlayIco = new System.Windows.Forms.PictureBox();
             this.yotubeIco = new System.Windows.Forms.PictureBox();
@@ -120,23 +137,6 @@
             this.toolTipButtons = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.deployAvrdude = new System.ComponentModel.BackgroundWorker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.confSearchButton = new System.Windows.Forms.Button();
-            this.avrdudeSearchButton = new System.Windows.Forms.Button();
-            this.confBox = new System.Windows.Forms.ComboBox();
-            this.confLabel = new System.Windows.Forms.Label();
-            this.avrdudeBox = new System.Windows.Forms.ComboBox();
-            this.avrdudeLabel = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.generalSettingsGroup = new System.Windows.Forms.GroupBox();
-            this.chipsSearchButton = new System.Windows.Forms.Button();
-            this.chipsBox = new System.Windows.Forms.ComboBox();
-            this.chipsLabel = new System.Windows.Forms.Label();
-            this.progsSearchButton = new System.Windows.Forms.Button();
-            this.progsBox = new System.Windows.Forms.ComboBox();
-            this.progsLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.MCU.SuspendLayout();
             this.filesSelectGroup.SuspendLayout();
@@ -156,6 +156,10 @@
             this.autoSettingsGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SETTINGS.SuspendLayout();
+            this.generalSettingsGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.INFO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.googlePlayIco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yotubeIco)).BeginInit();
@@ -164,10 +168,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.instIco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AppsLightCompanyIco)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.generalSettingsGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -661,7 +661,6 @@
             this.manualSettingsGroup.Controls.Add(this.label13);
             this.manualSettingsGroup.Controls.Add(this.manualSettingsCheck);
             this.manualSettingsGroup.Controls.Add(this.pictureBox6);
-            this.manualSettingsGroup.Enabled = false;
             this.manualSettingsGroup.ForeColor = System.Drawing.SystemColors.ControlText;
             this.manualSettingsGroup.Location = new System.Drawing.Point(8, 223);
             this.manualSettingsGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -822,6 +821,8 @@
             // manualSettingsCheck
             // 
             this.manualSettingsCheck.AutoSize = true;
+            this.manualSettingsCheck.Checked = true;
+            this.manualSettingsCheck.CheckState = System.Windows.Forms.CheckState.Checked;
             this.manualSettingsCheck.Location = new System.Drawing.Point(116, 0);
             this.manualSettingsCheck.Margin = new System.Windows.Forms.Padding(4);
             this.manualSettingsCheck.Name = "manualSettingsCheck";
@@ -916,6 +917,7 @@
             this.autoSettingsGroup.Controls.Add(this.bodLevelBox);
             this.autoSettingsGroup.Controls.Add(this.freqComboBox);
             this.autoSettingsGroup.Controls.Add(this.pictureBox3);
+            this.autoSettingsGroup.Enabled = false;
             this.autoSettingsGroup.Location = new System.Drawing.Point(8, 7);
             this.autoSettingsGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.autoSettingsGroup.Name = "autoSettingsGroup";
@@ -963,8 +965,6 @@
             // autoSettingsCheck
             // 
             this.autoSettingsCheck.AutoSize = true;
-            this.autoSettingsCheck.Checked = true;
-            this.autoSettingsCheck.CheckState = System.Windows.Forms.CheckState.Checked;
             this.autoSettingsCheck.Location = new System.Drawing.Point(140, 0);
             this.autoSettingsCheck.Margin = new System.Windows.Forms.Padding(4);
             this.autoSettingsCheck.Name = "autoSettingsCheck";
@@ -1183,6 +1183,47 @@
             this.SETTINGS.ToolTipText = "App Settings";
             this.SETTINGS.UseVisualStyleBackColor = true;
             // 
+            // generalSettingsGroup
+            // 
+            this.generalSettingsGroup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.generalSettingsGroup.Controls.Add(this.pictureBox8);
+            this.generalSettingsGroup.Controls.Add(this.label1);
+            this.generalSettingsGroup.Controls.Add(this.invertFusesCheck);
+            this.generalSettingsGroup.Controls.Add(this.debugModeCheck);
+            this.generalSettingsGroup.Controls.Add(this.invertFusesLabel);
+            this.generalSettingsGroup.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.generalSettingsGroup.Location = new System.Drawing.Point(10, 6);
+            this.generalSettingsGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.generalSettingsGroup.Name = "generalSettingsGroup";
+            this.generalSettingsGroup.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.generalSettingsGroup.Size = new System.Drawing.Size(712, 100);
+            this.generalSettingsGroup.TabIndex = 22;
+            this.generalSettingsGroup.TabStop = false;
+            this.generalSettingsGroup.Text = "General Settings";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::AvrFlasherTool.Properties.Resources.MCU_settings;
+            this.pictureBox8.Location = new System.Drawing.Point(5, 21);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(85, 80);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 4;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(87, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 23);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Debug mode:";
+            // 
             // invertFusesCheck
             // 
             this.invertFusesCheck.AutoSize = true;
@@ -1193,6 +1234,17 @@
             this.invertFusesCheck.Size = new System.Drawing.Size(18, 17);
             this.invertFusesCheck.TabIndex = 20;
             this.invertFusesCheck.UseVisualStyleBackColor = true;
+            // 
+            // debugModeCheck
+            // 
+            this.debugModeCheck.AutoSize = true;
+            this.debugModeCheck.Checked = true;
+            this.debugModeCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.debugModeCheck.Location = new System.Drawing.Point(210, 35);
+            this.debugModeCheck.Name = "debugModeCheck";
+            this.debugModeCheck.Size = new System.Drawing.Size(18, 17);
+            this.debugModeCheck.TabIndex = 18;
+            this.debugModeCheck.UseVisualStyleBackColor = true;
             // 
             // invertFusesLabel
             // 
@@ -1206,28 +1258,230 @@
             this.invertFusesLabel.TabIndex = 19;
             this.invertFusesLabel.Text = "Invert Fuse bits(used by default):";
             // 
-            // debugModeCheck
+            // groupBox1
             // 
-            this.debugModeCheck.AutoSize = true;
-            this.debugModeCheck.Checked = true;
-            this.debugModeCheck.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.debugModeCheck.Location = new System.Drawing.Point(210, 35);
-            this.debugModeCheck.Name = "debugModeCheck";
-            this.debugModeCheck.Size = new System.Drawing.Size(18, 17);
-            this.debugModeCheck.TabIndex = 18;
-            this.debugModeCheck.UseVisualStyleBackColor = true;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.groupBox1.Controls.Add(this.progsSearchButton);
+            this.groupBox1.Controls.Add(this.progsBox);
+            this.groupBox1.Controls.Add(this.progsLabel);
+            this.groupBox1.Controls.Add(this.chipsSearchButton);
+            this.groupBox1.Controls.Add(this.chipsBox);
+            this.groupBox1.Controls.Add(this.chipsLabel);
+            this.groupBox1.Controls.Add(this.confSearchButton);
+            this.groupBox1.Controls.Add(this.avrdudeSearchButton);
+            this.groupBox1.Controls.Add(this.confBox);
+            this.groupBox1.Controls.Add(this.confLabel);
+            this.groupBox1.Controls.Add(this.avrdudeBox);
+            this.groupBox1.Controls.Add(this.avrdudeLabel);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.pictureBox5);
+            this.groupBox1.Location = new System.Drawing.Point(10, 111);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(712, 147);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Files";
             // 
-            // label1
+            // progsSearchButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(87, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 23);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Debug mode:";
+            this.progsSearchButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Search;
+            this.progsSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.progsSearchButton.FlatAppearance.BorderSize = 0;
+            this.progsSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.progsSearchButton.Location = new System.Drawing.Point(681, 117);
+            this.progsSearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.progsSearchButton.Name = "progsSearchButton";
+            this.progsSearchButton.Size = new System.Drawing.Size(19, 17);
+            this.progsSearchButton.TabIndex = 16;
+            this.progsSearchButton.UseVisualStyleBackColor = true;
+            this.progsSearchButton.Click += new System.EventHandler(this.progsSearchButton_Click);
+            // 
+            // progsBox
+            // 
+            this.progsBox.AllowDrop = true;
+            this.progsBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.progsBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.progsBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.progsBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.progsBox.FormattingEnabled = true;
+            this.progsBox.IntegralHeight = false;
+            this.progsBox.ItemHeight = 16;
+            this.progsBox.Location = new System.Drawing.Point(178, 114);
+            this.progsBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.progsBox.Name = "progsBox";
+            this.progsBox.Size = new System.Drawing.Size(497, 24);
+            this.progsBox.TabIndex = 18;
+            this.progsBox.Text = "Please select a file...";
+            this.progsBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.progsBox_MouseDown);
+            // 
+            // progsLabel
+            // 
+            this.progsLabel.AutoSize = true;
+            this.progsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.progsLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.progsLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.progsLabel.Location = new System.Drawing.Point(87, 115);
+            this.progsLabel.Name = "progsLabel";
+            this.progsLabel.Size = new System.Drawing.Size(86, 23);
+            this.progsLabel.TabIndex = 17;
+            this.progsLabel.Text = "Progs file:";
+            // 
+            // chipsSearchButton
+            // 
+            this.chipsSearchButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Search;
+            this.chipsSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.chipsSearchButton.FlatAppearance.BorderSize = 0;
+            this.chipsSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chipsSearchButton.Location = new System.Drawing.Point(680, 86);
+            this.chipsSearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chipsSearchButton.Name = "chipsSearchButton";
+            this.chipsSearchButton.Size = new System.Drawing.Size(19, 17);
+            this.chipsSearchButton.TabIndex = 13;
+            this.chipsSearchButton.UseVisualStyleBackColor = true;
+            this.chipsSearchButton.Click += new System.EventHandler(this.chipsSearchButton_Click);
+            // 
+            // chipsBox
+            // 
+            this.chipsBox.AllowDrop = true;
+            this.chipsBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.chipsBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.chipsBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chipsBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.chipsBox.FormattingEnabled = true;
+            this.chipsBox.IntegralHeight = false;
+            this.chipsBox.ItemHeight = 16;
+            this.chipsBox.Location = new System.Drawing.Point(178, 83);
+            this.chipsBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chipsBox.Name = "chipsBox";
+            this.chipsBox.Size = new System.Drawing.Size(497, 24);
+            this.chipsBox.TabIndex = 15;
+            this.chipsBox.Text = "Please select a file...";
+            this.chipsBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chipsBox_MouseDown);
+            // 
+            // chipsLabel
+            // 
+            this.chipsLabel.AutoSize = true;
+            this.chipsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.chipsLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.chipsLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.chipsLabel.Location = new System.Drawing.Point(87, 84);
+            this.chipsLabel.Name = "chipsLabel";
+            this.chipsLabel.Size = new System.Drawing.Size(85, 23);
+            this.chipsLabel.TabIndex = 14;
+            this.chipsLabel.Text = "Chips file:";
+            // 
+            // confSearchButton
+            // 
+            this.confSearchButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Search;
+            this.confSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.confSearchButton.FlatAppearance.BorderSize = 0;
+            this.confSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.confSearchButton.Location = new System.Drawing.Point(680, 55);
+            this.confSearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.confSearchButton.Name = "confSearchButton";
+            this.confSearchButton.Size = new System.Drawing.Size(19, 17);
+            this.confSearchButton.TabIndex = 9;
+            this.confSearchButton.UseVisualStyleBackColor = true;
+            this.confSearchButton.Click += new System.EventHandler(this.confSearchButton_Click);
+            // 
+            // avrdudeSearchButton
+            // 
+            this.avrdudeSearchButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Search;
+            this.avrdudeSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.avrdudeSearchButton.FlatAppearance.BorderSize = 0;
+            this.avrdudeSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.avrdudeSearchButton.Location = new System.Drawing.Point(680, 25);
+            this.avrdudeSearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.avrdudeSearchButton.Name = "avrdudeSearchButton";
+            this.avrdudeSearchButton.Size = new System.Drawing.Size(19, 17);
+            this.avrdudeSearchButton.TabIndex = 8;
+            this.avrdudeSearchButton.UseVisualStyleBackColor = true;
+            this.avrdudeSearchButton.Click += new System.EventHandler(this.avrdudeSearchButton_Click);
+            // 
+            // confBox
+            // 
+            this.confBox.AllowDrop = true;
+            this.confBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.confBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.confBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.confBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.confBox.FormattingEnabled = true;
+            this.confBox.IntegralHeight = false;
+            this.confBox.ItemHeight = 16;
+            this.confBox.Location = new System.Drawing.Point(178, 52);
+            this.confBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.confBox.Name = "confBox";
+            this.confBox.Size = new System.Drawing.Size(497, 24);
+            this.confBox.TabIndex = 12;
+            this.confBox.Text = "Please select a file...";
+            this.confBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.confBox_MouseDown);
+            // 
+            // confLabel
+            // 
+            this.confLabel.AutoSize = true;
+            this.confLabel.BackColor = System.Drawing.Color.Transparent;
+            this.confLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.confLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.confLabel.Location = new System.Drawing.Point(87, 52);
+            this.confLabel.Name = "confLabel";
+            this.confLabel.Size = new System.Drawing.Size(79, 23);
+            this.confLabel.TabIndex = 11;
+            this.confLabel.Text = "Avr conf:";
+            // 
+            // avrdudeBox
+            // 
+            this.avrdudeBox.AllowDrop = true;
+            this.avrdudeBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.avrdudeBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.avrdudeBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.avrdudeBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.avrdudeBox.FormattingEnabled = true;
+            this.avrdudeBox.IntegralHeight = false;
+            this.avrdudeBox.ItemHeight = 16;
+            this.avrdudeBox.Location = new System.Drawing.Point(178, 21);
+            this.avrdudeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.avrdudeBox.Name = "avrdudeBox";
+            this.avrdudeBox.Size = new System.Drawing.Size(497, 24);
+            this.avrdudeBox.TabIndex = 10;
+            this.avrdudeBox.Text = "Please select a file...";
+            this.avrdudeBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.avrdudeBox_MouseDown);
+            // 
+            // avrdudeLabel
+            // 
+            this.avrdudeLabel.AutoSize = true;
+            this.avrdudeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.avrdudeLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.avrdudeLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.avrdudeLabel.Location = new System.Drawing.Point(87, 22);
+            this.avrdudeLabel.Name = "avrdudeLabel";
+            this.avrdudeLabel.Size = new System.Drawing.Size(85, 23);
+            this.avrdudeLabel.TabIndex = 9;
+            this.avrdudeLabel.Text = "AVRdude:";
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(680, 59);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(27, 26);
+            this.button3.TabIndex = 7;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::AvrFlasherTool.Properties.Resources.FileIco;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 20);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(85, 80);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
             // 
             // INFO
             // 
@@ -1377,260 +1631,6 @@
             // 
             this.deployAvrdude.DoWork += new System.ComponentModel.DoWorkEventHandler(this.deployAvrdude_DoWork);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox1.Controls.Add(this.progsSearchButton);
-            this.groupBox1.Controls.Add(this.progsBox);
-            this.groupBox1.Controls.Add(this.progsLabel);
-            this.groupBox1.Controls.Add(this.chipsSearchButton);
-            this.groupBox1.Controls.Add(this.chipsBox);
-            this.groupBox1.Controls.Add(this.chipsLabel);
-            this.groupBox1.Controls.Add(this.confSearchButton);
-            this.groupBox1.Controls.Add(this.avrdudeSearchButton);
-            this.groupBox1.Controls.Add(this.confBox);
-            this.groupBox1.Controls.Add(this.confLabel);
-            this.groupBox1.Controls.Add(this.avrdudeBox);
-            this.groupBox1.Controls.Add(this.avrdudeLabel);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Location = new System.Drawing.Point(10, 111);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(712, 147);
-            this.groupBox1.TabIndex = 21;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Files";
-            // 
-            // confSearchButton
-            // 
-            this.confSearchButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Search;
-            this.confSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.confSearchButton.FlatAppearance.BorderSize = 0;
-            this.confSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.confSearchButton.Location = new System.Drawing.Point(680, 55);
-            this.confSearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.confSearchButton.Name = "confSearchButton";
-            this.confSearchButton.Size = new System.Drawing.Size(19, 17);
-            this.confSearchButton.TabIndex = 9;
-            this.confSearchButton.UseVisualStyleBackColor = true;
-            this.confSearchButton.Click += new System.EventHandler(this.confSearchButton_Click);
-            // 
-            // avrdudeSearchButton
-            // 
-            this.avrdudeSearchButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Search;
-            this.avrdudeSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.avrdudeSearchButton.FlatAppearance.BorderSize = 0;
-            this.avrdudeSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.avrdudeSearchButton.Location = new System.Drawing.Point(680, 25);
-            this.avrdudeSearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.avrdudeSearchButton.Name = "avrdudeSearchButton";
-            this.avrdudeSearchButton.Size = new System.Drawing.Size(19, 17);
-            this.avrdudeSearchButton.TabIndex = 8;
-            this.avrdudeSearchButton.UseVisualStyleBackColor = true;
-            this.avrdudeSearchButton.Click += new System.EventHandler(this.avrdudeSearchButton_Click);
-            // 
-            // confBox
-            // 
-            this.confBox.AllowDrop = true;
-            this.confBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.confBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.confBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.confBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.confBox.FormattingEnabled = true;
-            this.confBox.IntegralHeight = false;
-            this.confBox.ItemHeight = 16;
-            this.confBox.Location = new System.Drawing.Point(178, 52);
-            this.confBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.confBox.Name = "confBox";
-            this.confBox.Size = new System.Drawing.Size(497, 24);
-            this.confBox.TabIndex = 12;
-            this.confBox.Text = "Please select a file...";
-            this.confBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.confBox_MouseDown);
-            // 
-            // confLabel
-            // 
-            this.confLabel.AutoSize = true;
-            this.confLabel.BackColor = System.Drawing.Color.Transparent;
-            this.confLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.confLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.confLabel.Location = new System.Drawing.Point(87, 52);
-            this.confLabel.Name = "confLabel";
-            this.confLabel.Size = new System.Drawing.Size(79, 23);
-            this.confLabel.TabIndex = 11;
-            this.confLabel.Text = "Avr conf:";
-            // 
-            // avrdudeBox
-            // 
-            this.avrdudeBox.AllowDrop = true;
-            this.avrdudeBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.avrdudeBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.avrdudeBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.avrdudeBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.avrdudeBox.FormattingEnabled = true;
-            this.avrdudeBox.IntegralHeight = false;
-            this.avrdudeBox.ItemHeight = 16;
-            this.avrdudeBox.Location = new System.Drawing.Point(178, 21);
-            this.avrdudeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.avrdudeBox.Name = "avrdudeBox";
-            this.avrdudeBox.Size = new System.Drawing.Size(497, 24);
-            this.avrdudeBox.TabIndex = 10;
-            this.avrdudeBox.Text = "Please select a file...";
-            this.avrdudeBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.avrdudeBox_MouseDown);
-            // 
-            // avrdudeLabel
-            // 
-            this.avrdudeLabel.AutoSize = true;
-            this.avrdudeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.avrdudeLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.avrdudeLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.avrdudeLabel.Location = new System.Drawing.Point(87, 22);
-            this.avrdudeLabel.Name = "avrdudeLabel";
-            this.avrdudeLabel.Size = new System.Drawing.Size(85, 23);
-            this.avrdudeLabel.TabIndex = 9;
-            this.avrdudeLabel.Text = "AVRdude:";
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(680, 59);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(27, 26);
-            this.button3.TabIndex = 7;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::AvrFlasherTool.Properties.Resources.FileIco;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 20);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(85, 80);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::AvrFlasherTool.Properties.Resources.MCU_settings;
-            this.pictureBox8.Location = new System.Drawing.Point(5, 21);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(85, 80);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
-            // 
-            // generalSettingsGroup
-            // 
-            this.generalSettingsGroup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.generalSettingsGroup.Controls.Add(this.pictureBox8);
-            this.generalSettingsGroup.Controls.Add(this.label1);
-            this.generalSettingsGroup.Controls.Add(this.invertFusesCheck);
-            this.generalSettingsGroup.Controls.Add(this.debugModeCheck);
-            this.generalSettingsGroup.Controls.Add(this.invertFusesLabel);
-            this.generalSettingsGroup.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.generalSettingsGroup.Location = new System.Drawing.Point(10, 6);
-            this.generalSettingsGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.generalSettingsGroup.Name = "generalSettingsGroup";
-            this.generalSettingsGroup.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.generalSettingsGroup.Size = new System.Drawing.Size(712, 100);
-            this.generalSettingsGroup.TabIndex = 22;
-            this.generalSettingsGroup.TabStop = false;
-            this.generalSettingsGroup.Text = "General Settings";
-            // 
-            // chipsSearchButton
-            // 
-            this.chipsSearchButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Search;
-            this.chipsSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.chipsSearchButton.FlatAppearance.BorderSize = 0;
-            this.chipsSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chipsSearchButton.Location = new System.Drawing.Point(680, 86);
-            this.chipsSearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chipsSearchButton.Name = "chipsSearchButton";
-            this.chipsSearchButton.Size = new System.Drawing.Size(19, 17);
-            this.chipsSearchButton.TabIndex = 13;
-            this.chipsSearchButton.UseVisualStyleBackColor = true;
-            this.chipsSearchButton.Click += new System.EventHandler(this.chipsSearchButton_Click);
-            // 
-            // chipsBox
-            // 
-            this.chipsBox.AllowDrop = true;
-            this.chipsBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.chipsBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.chipsBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chipsBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.chipsBox.FormattingEnabled = true;
-            this.chipsBox.IntegralHeight = false;
-            this.chipsBox.ItemHeight = 16;
-            this.chipsBox.Location = new System.Drawing.Point(178, 83);
-            this.chipsBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chipsBox.Name = "chipsBox";
-            this.chipsBox.Size = new System.Drawing.Size(497, 24);
-            this.chipsBox.TabIndex = 15;
-            this.chipsBox.Text = "Please select a file...";
-            this.chipsBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chipsBox_MouseDown);
-            // 
-            // chipsLabel
-            // 
-            this.chipsLabel.AutoSize = true;
-            this.chipsLabel.BackColor = System.Drawing.Color.Transparent;
-            this.chipsLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.chipsLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.chipsLabel.Location = new System.Drawing.Point(87, 84);
-            this.chipsLabel.Name = "chipsLabel";
-            this.chipsLabel.Size = new System.Drawing.Size(85, 23);
-            this.chipsLabel.TabIndex = 14;
-            this.chipsLabel.Text = "Chips file:";
-            // 
-            // progsSearchButton
-            // 
-            this.progsSearchButton.BackgroundImage = global::AvrFlasherTool.Properties.Resources.Search;
-            this.progsSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.progsSearchButton.FlatAppearance.BorderSize = 0;
-            this.progsSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.progsSearchButton.Location = new System.Drawing.Point(681, 117);
-            this.progsSearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.progsSearchButton.Name = "progsSearchButton";
-            this.progsSearchButton.Size = new System.Drawing.Size(19, 17);
-            this.progsSearchButton.TabIndex = 16;
-            this.progsSearchButton.UseVisualStyleBackColor = true;
-            this.progsSearchButton.Click += new System.EventHandler(this.progsSearchButton_Click);
-            // 
-            // progsBox
-            // 
-            this.progsBox.AllowDrop = true;
-            this.progsBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.progsBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.progsBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.progsBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.progsBox.FormattingEnabled = true;
-            this.progsBox.IntegralHeight = false;
-            this.progsBox.ItemHeight = 16;
-            this.progsBox.Location = new System.Drawing.Point(178, 114);
-            this.progsBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.progsBox.Name = "progsBox";
-            this.progsBox.Size = new System.Drawing.Size(497, 24);
-            this.progsBox.TabIndex = 18;
-            this.progsBox.Text = "Please select a file...";
-            this.progsBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.progsBox_MouseDown);
-            // 
-            // progsLabel
-            // 
-            this.progsLabel.AutoSize = true;
-            this.progsLabel.BackColor = System.Drawing.Color.Transparent;
-            this.progsLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.progsLabel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.progsLabel.Location = new System.Drawing.Point(87, 115);
-            this.progsLabel.Name = "progsLabel";
-            this.progsLabel.Size = new System.Drawing.Size(86, 23);
-            this.progsLabel.TabIndex = 17;
-            this.progsLabel.Text = "Progs file:";
-            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -1673,6 +1673,12 @@
             this.autoSettingsGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.SETTINGS.ResumeLayout(false);
+            this.generalSettingsGroup.ResumeLayout(false);
+            this.generalSettingsGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.INFO.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.googlePlayIco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yotubeIco)).EndInit();
@@ -1681,12 +1687,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.instIco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AppsLightCompanyIco)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.generalSettingsGroup.ResumeLayout(false);
-            this.generalSettingsGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }

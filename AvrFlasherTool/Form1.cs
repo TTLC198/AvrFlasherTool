@@ -50,7 +50,7 @@ namespace AvrFlasherTool
             chipsBox.Text = Path.Combine(Application.StartupPath, "cfg", "chips.txt");
             progsBox.Text = Path.Combine(Application.StartupPath, "cfg", "programmers.txt");
 
-            manualSettingsGroup.Enabled = false;
+           autoSettingsGroup.Enabled = false;
 
             try
             {
@@ -166,13 +166,6 @@ namespace AvrFlasherTool
             {
                 if (dataReceived != "")
                 {
-                    /*if (dataReceived.Contains("0x") && dataReceived.IndexOf("0x") > 0)
-                    {
-                        dataReceived = dataReceived.Substring(dataReceived.IndexOf("0x"), 12);
-                        LowByteText.Text = dataReceived.Substring(dataReceived.IndexOf("0x"), 4).Substring(2);
-                        HighByteText.Text = dataReceived.Substring(dataReceived.IndexOf("0x", dataReceived.IndexOf("0x") + 2), 4).Substring(2);
-                        ExByteText.Text = dataReceived.Substring(dataReceived.IndexOf("0x", dataReceived.IndexOf("0x") + 4), 4).Substring(2);
-                    }*/
                     ConsoleFuseTextBox.Text += dataReceived;
 
                     ConsoleFuseTextBox.SelectionStart = ConsoleTextBox.Text.Length;
@@ -447,23 +440,23 @@ namespace AvrFlasherTool
 
         private void FileSelect_MouseDown(object sender, MouseEventArgs e)
         {
+            openFileDialog.FileName = "*.hex";
             if (openFileDialog.ShowDialog() == DialogResult.Cancel)
                 return;
             // получаем выбранный файл
             openFileDialog.Multiselect = false;
             openFileDialog.Title = "Open Firmware files...";
-            openFileDialog.FileName = "*.hex";
             openFileDialog.Filter = "Firmware files(*.hex)|*.hex|All files(*.*)|*.*";
             FileSelect.Text = openFileDialog.FileName;
         }
 
         private void SearchWriteFileButton_Click(object sender, EventArgs e)
         {
+            openFileDialog.FileName = "*.hex";
             if (openFileDialog.ShowDialog() == DialogResult.Cancel)
                 return;
             // получаем выбранный файл
             openFileDialog.Title = "Open Firmware files...";
-            openFileDialog.FileName = "*.hex";
             openFileDialog.Filter = "Firmware files(*.hex)|*.hex|All files(*.*)|*.*";
             openFileDialog.Multiselect = false;
             FileSelect.Text = openFileDialog.FileName;
@@ -618,6 +611,12 @@ namespace AvrFlasherTool
             }
             else
             {
+                MessageBox.Show("Caution!\r\n" +
+                                "Automatic fuse settings are under testing and may therefore harm your device. Works only with ATmega 8, use with caution!",
+                                "Caution!",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information
+                                );
                 autoSettingsCheck.Checked = true;
                 autoSettingsGroup.Enabled = true;
             }
